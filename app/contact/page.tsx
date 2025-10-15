@@ -325,8 +325,19 @@ export default function ContactPage() {
                 </CardContent>
               </Card>
             </div>
+            {/* Social Media Section */}
+            <Card className="border-border">
+              <CardHeader>
+                <CardTitle className="text-card-foreground">Follow Us</CardTitle>
+                <CardDescription>Stay connected through our social media channels</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <SocialMedia showLabels />
+              </CardContent>
+            </Card>
           </div>
         </div>
+        
       </section>
 
       {/* Map Section */}
