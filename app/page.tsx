@@ -42,9 +42,14 @@ export default function HomePage() {
 
       {/* Partners/Brands Section */}
       <section className="py-12 md:py-16">
-        <div className="h-px w-12 bg-gradient-to-r from-transparent to-primary"></div>
+         <div className="mb-10 text-center">
+            <div className="inline-flex items-center gap-3 mb-3">
+              <div className="h-px w-12 bg-gradient-to-r from-transparent to-primary"></div>
               <h2 className="text-2xl md:text-3xl font-bold text-foreground">Authorized Partner of Leading Brands</h2>
               <div className="h-px w-12 bg-gradient-to-l from-transparent to-primary"></div>
+            </div>
+            <p className="text-sm text-muted-foreground">Trusted by the world's top POS manufacturers</p>
+          </div>
           {/* تم استبدال النص بالشعارات */}
           <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
             
@@ -78,13 +83,6 @@ export default function HomePage() {
             </div>
             <div className="h-10 w-32 md:h-12 md:w-40 opacity-70 hover:opacity-100 transition-opacity">
               <img 
-                src="/logos/verifone.PNG" 
-                alt="Verifone Logo" 
-                className="h-full w-full object-contain" 
-              />
-            </div>
-            <div className="h-10 w-32 md:h-12 md:w-40 opacity-70 hover:opacity-100 transition-opacity">
-              <img 
                 src="/logos/IMIN.svg" 
                 alt="IMIN" 
                 className="h-full w-full object-contain" 
@@ -110,7 +108,6 @@ export default function HomePage() {
                 alt="NEXGO" 
                 className="h-full w-full object-contain" 
               />
-            </div>
           </div>
         </div>
       </section>
