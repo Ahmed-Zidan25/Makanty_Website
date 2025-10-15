@@ -197,17 +197,8 @@ export default function ContactPage() {
                   </div>
                 </CardContent>
               </Card>
-              <p></p>
-               {/* Social Media Section */}
-            <Card className="border-border">
-              <CardHeader>
-                <CardTitle className="text-card-foreground">Follow Us</CardTitle>
-                <CardDescription>Stay connected through our social media channels</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <SocialMedia showLabels />
-              </CardContent>
-            </Card>
+             
+            
            
             </div>
               
@@ -336,6 +327,17 @@ export default function ContactPage() {
                   </form>
                 </CardContent>
               </Card>
+              <p></p>
+                 {/* Social Media Section */}
+            <Card className="border-border">
+              <CardHeader>
+                <CardTitle className="text-card-foreground">Follow Us</CardTitle>
+                <CardDescription>Stay connected through our social media channels</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <SocialMedia showLabels />
+              </CardContent>
+            </Card>
            </div>
           </div>
         </div>
