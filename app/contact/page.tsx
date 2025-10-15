@@ -325,8 +325,8 @@ export default function ContactPage() {
                   </form>
                 </CardContent>
               </Card>
-            </div>
-            </div>
+           
+            
             {/* Social Media Section */}
             <Card className="border-border">
               <CardHeader>
@@ -337,7 +337,8 @@ export default function ContactPage() {
                 <SocialMedia showLabels />
               </CardContent>
             </Card>
-          
+             </div>
+          </div>
         </div>
         
       </section>
