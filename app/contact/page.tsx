@@ -197,9 +197,8 @@ export default function ContactPage() {
                   </div>
                 </CardContent>
               </Card>
-            </div>
-            <div>
-                {/* Social Media Section */}
+              <p></p>
+               {/* Social Media Section */}
             <Card className="border-border">
               <CardHeader>
                 <CardTitle className="text-card-foreground">Follow Us</CardTitle>
@@ -209,7 +208,9 @@ export default function ContactPage() {
                 <SocialMedia showLabels />
               </CardContent>
             </Card>
-           </div>
+           
+            </div>
+              
 
 
             {/* Contact Form */}
