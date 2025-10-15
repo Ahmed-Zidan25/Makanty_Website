@@ -12,6 +12,7 @@ import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, Command
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
 import { Mail, Phone, MapPin, Clock, Check, ChevronsUpDown } from "lucide-react"
 import { cn } from "@/lib/utils"
+import SocialMedia from "@/components/social-media"
 
 const countryCodes = [
   { name: "Afghanistan", code: "+93" },
