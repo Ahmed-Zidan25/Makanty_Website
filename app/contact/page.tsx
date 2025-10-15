@@ -168,8 +168,7 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <h3 className="mb-1 font-semibold text-foreground">Phone</h3>
-                        <p className="text-sm text-muted-foreground">+1 (555) 123-4567</p>
-                        <p className="text-sm text-muted-foreground">+1 (555) 987-6543</p>
+                        <p className="text-sm text-muted-foreground">+2 01069443438</p>
                       </div>
                     </div>
 
@@ -179,9 +178,9 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <h3 className="mb-1 font-semibold text-foreground">Address</h3>
-                        <p className="text-sm text-muted-foreground">123 Business Street</p>
-                        <p className="text-sm text-muted-foreground">City, State 12345</p>
-                        <p className="text-sm text-muted-foreground">Country</p>
+                        <p className="text-sm text-muted-foreground">Al Bahr Al-Raisi Street</p>
+                        <p className="text-sm text-muted-foreground">Sheraton, El-Nozha, Cairo</p>
+                        <p className="text-sm text-muted-foreground">Egypt</p>
                       </div>
                     </div>
 
@@ -192,8 +191,6 @@ export default function ContactPage() {
                       <div>
                         <h3 className="mb-1 font-semibold text-foreground">Business Hours</h3>
                         <p className="text-sm text-muted-foreground">Monday - Friday: 9:00 AM - 6:00 PM</p>
-                        <p className="text-sm text-muted-foreground">Saturday: 10:00 AM - 4:00 PM</p>
-                        <p className="text-sm text-muted-foreground">Sunday: Closed</p>
                         <p className="mt-2 text-sm font-medium text-primary">24/7 Emergency Support Available</p>
                       </div>
                     </div>
@@ -201,6 +198,19 @@ export default function ContactPage() {
                 </CardContent>
               </Card>
             </div>
+            <div>
+                {/* Social Media Section */}
+            <Card className="border-border">
+              <CardHeader>
+                <CardTitle className="text-card-foreground">Follow Us</CardTitle>
+                <CardDescription>Stay connected through our social media channels</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <SocialMedia showLabels />
+              </CardContent>
+            </Card>
+           </div>
+
 
             {/* Contact Form */}
             <div className="lg:col-span-2">
@@ -325,19 +335,7 @@ export default function ContactPage() {
                   </form>
                 </CardContent>
               </Card>
-           
-            
-            {/* Social Media Section */}
-            <Card className="border-border">
-              <CardHeader>
-                <CardTitle className="text-card-foreground">Follow Us</CardTitle>
-                <CardDescription>Stay connected through our social media channels</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <SocialMedia showLabels />
-              </CardContent>
-            </Card>
-             </div>
+           </div>
           </div>
         </div>
         
