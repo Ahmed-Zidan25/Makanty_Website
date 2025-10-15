@@ -76,6 +76,13 @@ export default function HomePage() {
             </div>
             <div className="h-10 w-32 md:h-12 md:w-40 opacity-70 hover:opacity-100 transition-opacity">
               <img 
+                src="/logos/verifone.PNG" 
+                alt="verifone Logo" 
+                className="h-full w-full object-contain" 
+              />
+            </div>
+            <div className="h-10 w-32 md:h-12 md:w-40 opacity-70 hover:opacity-100 transition-opacity">
+              <img 
                 src="/logos/sunmi.PNG" 
                 alt="sunmi" 
                 className="h-full w-full object-contain" 
