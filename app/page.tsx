@@ -7,16 +7,29 @@ export default function HomePage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary/95 to-primary/90 text-primary-foreground">
-        <div className="absolute inset-0 bg-[url('/abstract-tech-pattern.jpg')] opacity-10" />
-        <div className="container relative mx-auto px-4 py-20 md:py-32">
-          <div className="mx-auto max-w-3xl text-center">
+<section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary/95 to-primary/90 text-primary-foreground">
+    <video 
+        className="absolute inset-0 h-full w-full object-cover opacity-10" 
+        src="/abstract-tech-pattern.mp4" 
+        autoPlay 
+        loop 
+        muted 
+        playsInline 
+    />
+    <div className="container relative mx-auto px-4 py-12 md:py-24">
+        <div className="mx-auto max-w-3xl text-center">
             <h1 className="mb-6 text-4xl font-bold leading-tight text-balance md:text-5xl lg:text-6xl">
+         
+      {/* <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary/95 to-primary/90 text-primary-foreground">
+    <div className="absolute inset-0 bg-[url('/abstract-tech-pattern.jpg')] opacity-10" />
+    <div className="container relative mx-auto px-4 py-12 md:py-24">
+        <div className="mx-auto max-w-3xl text-center">
+            <h1 className="mb-6 text-4xl font-bold leading-tight text-balance md:text-5xl lg:text-6xl"> */}
               Makanty – Empowering Every Transaction
             </h1>
             <p className="mb-8 text-lg text-primary-foreground/90 leading-relaxed md:text-xl">
               A comprehensive fintech enabler and POS infrastructure provider — bridging hardware, software, and
-              services to power every payment. We supply, support, and sustain the full fintech journey.
+              services to power every payment. We supply, support, and sustain the full fintech journey — from POS terminals to field operations, from maintenance to merchant branding.
             </p>
             <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
               <Button asChild size="lg" variant="secondary" className="text-base">
