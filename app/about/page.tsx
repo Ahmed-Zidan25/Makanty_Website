@@ -153,6 +153,22 @@ export default function AboutPage() {
                 </CardContent>
               </Card>
             </div>
+            </div>
+        </div>
+      </section>
+<section className="py-12 md:py-16">
+        <div className="container mx-auto px-4">
+          <div className="mx-auto max-w-6xl">
+            <div className="mb-12 text-center">
+              <h2 className="mb-4 text-3xl font-bold text-foreground md:text-4xl">What Drives Us</h2>
+              <p>Our core values shape everything we do.</p>
+            </div>
+
+
+
+
+
+
 
             {/* Core Values */}
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -230,9 +246,10 @@ export default function AboutPage() {
                 </CardContent>
               </Card>
             </div>
-          </div>
-        </div>
-      </section>
+            </div>
+            </div>
+            </section>
+          
 
       {/* Partners Section */}
       <section className="py-12 md:py-16 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
