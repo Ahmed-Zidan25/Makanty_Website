@@ -42,19 +42,12 @@ export default function HomePage() {
 
       {/* Partners/Brands Section */}
       <section className="py-12 md:py-16">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="mb-10 text-3xl font-bold text-foreground md:text-4xl">
-            Authorized Partner of Leading Brands
-          </h2>
+        <div className="h-px w-12 bg-gradient-to-r from-transparent to-primary"></div>
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground">Authorized Partner of Leading Brands</h2>
+              <div className="h-px w-12 bg-gradient-to-l from-transparent to-primary"></div>
           {/* تم استبدال النص بالشعارات */}
           <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
-            <div className="h-10 w-32 md:h-12 md:w-40 opacity-70 hover:opacity-100 transition-opacity">
-              <img 
-                src="/logos/verifone.PNG" 
-                alt="Verifone Logo" 
-                className="h-full w-full object-contain" 
-              />
-            </div>
+            
             <div className="h-10 w-32 md:h-12 md:w-40 opacity-70 hover:opacity-100 transition-opacity">
               <img 
                 src="/logos/pax.PNG" 
@@ -80,6 +73,13 @@ export default function HomePage() {
               <img 
                 src="/logos/sunmi.PNG" 
                 alt="sunmi" 
+                className="h-full w-full object-contain" 
+              />
+            </div>
+            <div className="h-10 w-32 md:h-12 md:w-40 opacity-70 hover:opacity-100 transition-opacity">
+              <img 
+                src="/logos/verifone.PNG" 
+                alt="Verifone Logo" 
                 className="h-full w-full object-contain" 
               />
             </div>
