@@ -112,47 +112,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Services Section */}
-
-     
-      {/* Trusted Brands Section */}
-      <section className="border-b border-border bg-gradient-to-b from-muted/50 to-background py-12 overflow-hidden">
-        <div className="container mx-auto px-4">
-          <div className="mb-10 text-center">
-            <div className="inline-flex items-center gap-3 mb-3">
-              <div className="h-px w-12 bg-gradient-to-r from-transparent to-primary"></div>
-              <h2 className="text-2xl md:text-3xl font-bold text-foreground">Authorized Partner of Leading Brands</h2>
-              <div className="h-px w-12 bg-gradient-to-l from-transparent to-primary"></div>
-            </div>
-            <p className="text-sm text-muted-foreground">Trusted by the world's top POS manufacturers</p>
-          </div>
-          <div className="relative">
-            <div className="flex animate-scroll hover:pause-animation">
-              <div className="flex items-center justify-center gap-6 md:gap-8 min-w-full shrink-0">
-                {["PAX", "Verifone", "SUNMI", "NEXGO", "NewPOS", "IMIN", "Feitian"].map((brand) => (
-                  <div
-                    key={brand}
-                    className="px-8 py-4 bg-card border border-border rounded-lg shadow-sm hover:shadow-md hover:border-primary/50 transition-all"
-                  >
-                    <span className="text-xl md:text-2xl font-bold text-foreground whitespace-nowrap">{brand}</span>
-                  </div>
-                ))}
-              </div>
-              {/* Duplicate for seamless loop */}
-              <div className="flex items-center justify-center gap-6 md:gap-8 min-w-full shrink-0">
-                {["PAX", "Verifone", "SUNMI", "NEXGO", "NewPOS", "IMIN", "Feitian"].map((brand) => (
-                  <div
-                    key={`${brand}-2`}
-                    className="px-8 py-4 bg-card border border-border rounded-lg shadow-sm hover:shadow-md hover:border-primary/50 transition-all"
-                  >
-                    <span className="text-xl md:text-2xl font-bold text-foreground whitespace-nowrap">{brand}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Ecosystem Section */}
       <section className="py-16 md:py-24">
