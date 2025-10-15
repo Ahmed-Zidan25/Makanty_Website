@@ -7,29 +7,16 @@ export default function HomePage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-<section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary/95 to-primary/90 text-primary-foreground">
-    <video 
-        className="absolute inset-0 h-full w-full object-cover opacity-10" 
-        src="/abstract-tech-pattern.mp4" 
-        autoPlay 
-        loop 
-        muted 
-        playsInline 
-    />
-    <div className="container relative mx-auto px-4 py-12 md:py-24">
-        <div className="mx-auto max-w-3xl text-center">
+      <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary/95 to-primary/90 text-primary-foreground">
+        <div className="absolute inset-0 bg-[url('/pos-devices-background.jpg')] opacity-10" />
+        <div className="container relative mx-auto px-4 py-10 md:py-16">
+          <div className="mx-auto max-w-3xl text-center">
             <h1 className="mb-6 text-4xl font-bold leading-tight text-balance md:text-5xl lg:text-6xl">
-         
-      {/* <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary/95 to-primary/90 text-primary-foreground">
-    <div className="absolute inset-0 bg-[url('/abstract-tech-pattern.jpg')] opacity-10" />
-    <div className="container relative mx-auto px-4 py-12 md:py-24">
-        <div className="mx-auto max-w-3xl text-center">
-            <h1 className="mb-6 text-4xl font-bold leading-tight text-balance md:text-5xl lg:text-6xl"> */}
               Makanty – Empowering Every Transaction
             </h1>
             <p className="mb-8 text-lg text-primary-foreground/90 leading-relaxed md:text-xl">
               A comprehensive fintech enabler and POS infrastructure provider — bridging hardware, software, and
-              services to power every payment. We supply, support, and sustain the full fintech journey — from POS terminals to field operations, from maintenance to merchant branding.
+              services to power every payment. We supply, support, and sustain the full fintech journey.
             </p>
             <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
               <Button asChild size="lg" variant="secondary" className="text-base">
@@ -52,28 +39,36 @@ export default function HomePage() {
       </section>
 
       {/* Trusted Brands Section */}
-      <section className="border-b border-border bg-muted/30 py-12 overflow-hidden">
+      <section className="border-b border-border bg-gradient-to-b from-muted/50 to-background py-12 overflow-hidden">
         <div className="container mx-auto px-4">
-          <p className="mb-8 text-center text-sm font-medium uppercase tracking-wide text-muted-foreground">
-            Authorized Partner of Leading Brands
-          </p>
+          <div className="mb-10 text-center">
+            <div className="inline-flex items-center gap-3 mb-3">
+              <div className="h-px w-12 bg-gradient-to-r from-transparent to-primary"></div>
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground">Authorized Partner of Leading Brands</h2>
+              <div className="h-px w-12 bg-gradient-to-l from-transparent to-primary"></div>
+            </div>
+            <p className="text-sm text-muted-foreground">Trusted by the world's top POS manufacturers</p>
+          </div>
           <div className="relative">
             <div className="flex animate-scroll hover:pause-animation">
-              <div className="flex items-center justify-center gap-8 md:gap-12 min-w-full shrink-0">
+              <div className="flex items-center justify-center gap-6 md:gap-8 min-w-full shrink-0">
                 {["PAX", "Verifone", "SUNMI", "NEXGO", "NewPOS", "IMIN", "Feitian"].map((brand) => (
-                  <div key={brand} className="text-2xl font-bold text-foreground/60 md:text-3xl whitespace-nowrap">
-                    {brand}
+                  <div
+                    key={brand}
+                    className="px-8 py-4 bg-card border border-border rounded-lg shadow-sm hover:shadow-md hover:border-primary/50 transition-all"
+                  >
+                    <span className="text-xl md:text-2xl font-bold text-foreground whitespace-nowrap">{brand}</span>
                   </div>
                 ))}
               </div>
               {/* Duplicate for seamless loop */}
-              <div className="flex items-center justify-center gap-8 md:gap-12 min-w-full shrink-0">
+              <div className="flex items-center justify-center gap-6 md:gap-8 min-w-full shrink-0">
                 {["PAX", "Verifone", "SUNMI", "NEXGO", "NewPOS", "IMIN", "Feitian"].map((brand) => (
                   <div
                     key={`${brand}-2`}
-                    className="text-2xl font-bold text-foreground/60 md:text-3xl whitespace-nowrap"
+                    className="px-8 py-4 bg-card border border-border rounded-lg shadow-sm hover:shadow-md hover:border-primary/50 transition-all"
                   >
-                    {brand}
+                    <span className="text-xl md:text-2xl font-bold text-foreground whitespace-nowrap">{brand}</span>
                   </div>
                 ))}
               </div>
@@ -94,8 +89,8 @@ export default function HomePage() {
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             <Card className="border-border transition-all hover:shadow-lg hover:bg-primary hover:text-primary-foreground group">
-              <CardContent className="p-6">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 group-hover:bg-primary-foreground/20">
+              <CardContent className="p-6 text-center">
+                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 group-hover:bg-primary-foreground/20">
                   <Package className="h-6 w-6 text-primary group-hover:text-primary-foreground" />
                 </div>
                 <h3 className="mb-2 text-xl font-semibold text-foreground group-hover:text-primary-foreground">
@@ -108,8 +103,8 @@ export default function HomePage() {
             </Card>
 
             <Card className="border-border transition-all hover:shadow-lg hover:bg-primary hover:text-primary-foreground group">
-              <CardContent className="p-6">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10 group-hover:bg-primary-foreground/20">
+              <CardContent className="p-6 text-center">
+                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10 group-hover:bg-primary-foreground/20">
                   <Wrench className="h-6 w-6 text-secondary group-hover:text-primary-foreground" />
                 </div>
                 <h3 className="mb-2 text-xl font-semibold text-foreground group-hover:text-primary-foreground">
@@ -122,8 +117,8 @@ export default function HomePage() {
             </Card>
 
             <Card className="border-border transition-all hover:shadow-lg hover:bg-primary hover:text-primary-foreground group">
-              <CardContent className="p-6">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-accent/10 group-hover:bg-primary-foreground/20">
+              <CardContent className="p-6 text-center">
+                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-accent/10 group-hover:bg-primary-foreground/20">
                   <Shield className="h-6 w-6 text-accent group-hover:text-primary-foreground" />
                 </div>
                 <h3 className="mb-2 text-xl font-semibold text-foreground group-hover:text-primary-foreground">
@@ -136,8 +131,8 @@ export default function HomePage() {
             </Card>
 
             <Card className="border-border transition-all hover:shadow-lg hover:bg-primary hover:text-primary-foreground group">
-              <CardContent className="p-6">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 group-hover:bg-primary-foreground/20">
+              <CardContent className="p-6 text-center">
+                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 group-hover:bg-primary-foreground/20">
                   <Zap className="h-6 w-6 text-primary group-hover:text-primary-foreground" />
                 </div>
                 <h3 className="mb-2 text-xl font-semibold text-foreground group-hover:text-primary-foreground">
@@ -150,8 +145,8 @@ export default function HomePage() {
             </Card>
 
             <Card className="border-border transition-all hover:shadow-lg hover:bg-primary hover:text-primary-foreground group">
-              <CardContent className="p-6">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10 group-hover:bg-primary-foreground/20">
+              <CardContent className="p-6 text-center">
+                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10 group-hover:bg-primary-foreground/20">
                   <Headphones className="h-6 w-6 text-secondary group-hover:text-primary-foreground" />
                 </div>
                 <h3 className="mb-2 text-xl font-semibold text-foreground group-hover:text-primary-foreground">
@@ -164,8 +159,8 @@ export default function HomePage() {
             </Card>
 
             <Card className="border-border transition-all hover:shadow-lg hover:bg-primary hover:text-primary-foreground group">
-              <CardContent className="p-6">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-accent/10 group-hover:bg-primary-foreground/20">
+              <CardContent className="p-6 text-center">
+                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-accent/10 group-hover:bg-primary-foreground/20">
                   <CheckCircle className="h-6 w-6 text-accent group-hover:text-primary-foreground" />
                 </div>
                 <h3 className="mb-2 text-xl font-semibold text-foreground group-hover:text-primary-foreground">
@@ -178,8 +173,8 @@ export default function HomePage() {
             </Card>
 
             <Card className="border-border transition-all hover:shadow-lg hover:bg-primary hover:text-primary-foreground group">
-              <CardContent className="p-6">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 group-hover:bg-primary-foreground/20">
+              <CardContent className="p-6 text-center">
+                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 group-hover:bg-primary-foreground/20">
                   <Package className="h-6 w-6 text-primary group-hover:text-primary-foreground" />
                 </div>
                 <h3 className="mb-2 text-xl font-semibold text-foreground group-hover:text-primary-foreground">
@@ -192,8 +187,8 @@ export default function HomePage() {
             </Card>
 
             <Card className="border-border transition-all hover:shadow-lg hover:bg-primary hover:text-primary-foreground group">
-              <CardContent className="p-6">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10 group-hover:bg-primary-foreground/20">
+              <CardContent className="p-6 text-center">
+                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10 group-hover:bg-primary-foreground/20">
                   <Globe className="h-6 w-6 text-secondary group-hover:text-primary-foreground" />
                 </div>
                 <h3 className="mb-2 text-xl font-semibold text-foreground group-hover:text-primary-foreground">
@@ -220,8 +215,8 @@ export default function HomePage() {
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             <Card className="border-border transition-all hover:shadow-lg hover:bg-primary hover:text-primary-foreground group">
-              <CardContent className="p-6">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 group-hover:bg-primary-foreground/20">
+              <CardContent className="p-6 text-center">
+                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 group-hover:bg-primary-foreground/20">
                   <Package className="h-6 w-6 text-primary group-hover:text-primary-foreground" />
                 </div>
                 <h3 className="mb-2 text-xl font-semibold text-foreground group-hover:text-primary-foreground">
@@ -234,8 +229,8 @@ export default function HomePage() {
             </Card>
 
             <Card className="border-border transition-all hover:shadow-lg hover:bg-primary hover:text-primary-foreground group">
-              <CardContent className="p-6">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10 group-hover:bg-primary-foreground/20">
+              <CardContent className="p-6 text-center">
+                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10 group-hover:bg-primary-foreground/20">
                   <Shield className="h-6 w-6 text-secondary group-hover:text-primary-foreground" />
                 </div>
                 <h3 className="mb-2 text-xl font-semibold text-foreground group-hover:text-primary-foreground">
@@ -248,8 +243,8 @@ export default function HomePage() {
             </Card>
 
             <Card className="border-border transition-all hover:shadow-lg hover:bg-primary hover:text-primary-foreground group">
-              <CardContent className="p-6">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-accent/10 group-hover:bg-primary-foreground/20">
+              <CardContent className="p-6 text-center">
+                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-accent/10 group-hover:bg-primary-foreground/20">
                   <Globe className="h-6 w-6 text-accent group-hover:text-primary-foreground" />
                 </div>
                 <h3 className="mb-2 text-xl font-semibold text-foreground group-hover:text-primary-foreground">
@@ -262,8 +257,8 @@ export default function HomePage() {
             </Card>
 
             <Card className="border-border transition-all hover:shadow-lg hover:bg-primary hover:text-primary-foreground group">
-              <CardContent className="p-6">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 group-hover:bg-primary-foreground/20">
+              <CardContent className="p-6 text-center">
+                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 group-hover:bg-primary-foreground/20">
                   <Wrench className="h-6 w-6 text-primary group-hover:text-primary-foreground" />
                 </div>
                 <h3 className="mb-2 text-xl font-semibold text-foreground group-hover:text-primary-foreground">
@@ -276,8 +271,8 @@ export default function HomePage() {
             </Card>
 
             <Card className="border-border transition-all hover:shadow-lg hover:bg-primary hover:text-primary-foreground group">
-              <CardContent className="p-6">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10 group-hover:bg-primary-foreground/20">
+              <CardContent className="p-6 text-center">
+                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10 group-hover:bg-primary-foreground/20">
                   <CheckCircle className="h-6 w-6 text-secondary group-hover:text-primary-foreground" />
                 </div>
                 <h3 className="mb-2 text-xl font-semibold text-foreground group-hover:text-primary-foreground">
@@ -290,8 +285,8 @@ export default function HomePage() {
             </Card>
 
             <Card className="border-border transition-all hover:shadow-lg hover:bg-primary hover:text-primary-foreground group">
-              <CardContent className="p-6">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-accent/10 group-hover:bg-primary-foreground/20">
+              <CardContent className="p-6 text-center">
+                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-accent/10 group-hover:bg-primary-foreground/20">
                   <Zap className="h-6 w-6 text-accent group-hover:text-primary-foreground" />
                 </div>
                 <h3 className="mb-2 text-xl font-semibold text-foreground group-hover:text-primary-foreground">
@@ -427,11 +422,32 @@ export default function HomePage() {
               Trusted by leading organizations across multiple industries
             </p>
           </div>
-          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
-            {["Banks", "Fintechs", "Retail", "Telecom", "Utilities"].map((sector) => (
-              <div key={sector} className="text-xl font-semibold text-foreground/70 md:text-2xl">
-                {sector}
-              </div>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
+            {[
+              { name: "Banks", image: "/sector-banks.jpg" },
+              { name: "Fintechs", image: "/sector-fintechs.jpg" },
+              { name: "Retail", image: "/sector-retail.jpg" },
+              { name: "Telecom", image: "/sector-telecom.jpg" },
+              { name: "Utilities", image: "/sector-utilities.jpg" },
+            ].map((sector) => (
+              <Card
+                key={sector.name}
+                className="group overflow-hidden border-border transition-all hover:shadow-xl hover:border-primary/50"
+              >
+                <CardContent className="p-0">
+                  <div className="relative h-40 overflow-hidden">
+                    <img
+                      src={sector.image || "/placeholder.svg"}
+                      alt={sector.name}
+                      className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent opacity-80 group-hover:opacity-90 transition-opacity" />
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <h3 className="text-xl font-bold text-white text-center px-4">{sector.name}</h3>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
             ))}
           </div>
         </div>

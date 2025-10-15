@@ -91,12 +91,12 @@ export default function QuotePage() {
               {/* Benefits Sidebar */}
               <div className="space-y-6">
                 <Card className="border-border bg-primary/5">
-                  <CardContent className="p-6">
-                    <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
+                  <CardContent className="p-6 text-center">
+                    <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
                       <FileText className="h-6 w-6 text-primary" />
                     </div>
                     <h3 className="mb-3 text-lg font-semibold text-foreground">What You'll Get</h3>
-                    <ul className="space-y-3">
+                    <ul className="space-y-3 text-left">
                       {[
                         "Detailed pricing breakdown",
                         "Product recommendations",

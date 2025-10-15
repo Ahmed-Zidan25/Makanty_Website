@@ -3,13 +3,88 @@
 import type React from "react"
 
 import { useState } from "react"
-import { Card, CardContent } from "@/components/ui/card"
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Mail, Phone, MapPin, Clock } from "lucide-react"
+import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from "@/components/ui/command"
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
+import { Mail, Phone, MapPin, Clock, Check, ChevronsUpDown } from "lucide-react"
+import { cn } from "@/lib/utils"
+
+const countryCodes = [
+  { name: "Afghanistan", code: "+93" },
+  { name: "Albania", code: "+355" },
+  { name: "Algeria", code: "+213" },
+  { name: "Argentina", code: "+54" },
+  { name: "Australia", code: "+61" },
+  { name: "Austria", code: "+43" },
+  { name: "Bahrain", code: "+973" },
+  { name: "Bangladesh", code: "+880" },
+  { name: "Belgium", code: "+32" },
+  { name: "Brazil", code: "+55" },
+  { name: "Canada", code: "+1" },
+  { name: "China", code: "+86" },
+  { name: "Colombia", code: "+57" },
+  { name: "Czech Republic", code: "+420" },
+  { name: "Denmark", code: "+45" },
+  { name: "Egypt", code: "+20" },
+  { name: "Finland", code: "+358" },
+  { name: "France", code: "+33" },
+  { name: "Germany", code: "+49" },
+  { name: "Greece", code: "+30" },
+  { name: "Hong Kong", code: "+852" },
+  { name: "Hungary", code: "+36" },
+  { name: "India", code: "+91" },
+  { name: "Indonesia", code: "+62" },
+  { name: "Iran", code: "+98" },
+  { name: "Iraq", code: "+964" },
+  { name: "Ireland", code: "+353" },
+  { name: "Israel", code: "+972" },
+  { name: "Italy", code: "+39" },
+  { name: "Japan", code: "+81" },
+  { name: "Jordan", code: "+962" },
+  { name: "Kenya", code: "+254" },
+  { name: "Kuwait", code: "+965" },
+  { name: "Lebanon", code: "+961" },
+  { name: "Libya", code: "+218" },
+  { name: "Malaysia", code: "+60" },
+  { name: "Mexico", code: "+52" },
+  { name: "Morocco", code: "+212" },
+  { name: "Netherlands", code: "+31" },
+  { name: "New Zealand", code: "+64" },
+  { name: "Nigeria", code: "+234" },
+  { name: "Norway", code: "+47" },
+  { name: "Oman", code: "+968" },
+  { name: "Pakistan", code: "+92" },
+  { name: "Palestine", code: "+970" },
+  { name: "Philippines", code: "+63" },
+  { name: "Poland", code: "+48" },
+  { name: "Portugal", code: "+351" },
+  { name: "Qatar", code: "+974" },
+  { name: "Romania", code: "+40" },
+  { name: "Russia", code: "+7" },
+  { name: "Saudi Arabia", code: "+966" },
+  { name: "Singapore", code: "+65" },
+  { name: "South Africa", code: "+27" },
+  { name: "South Korea", code: "+82" },
+  { name: "Spain", code: "+34" },
+  { name: "Sudan", code: "+249" },
+  { name: "Sweden", code: "+46" },
+  { name: "Switzerland", code: "+41" },
+  { name: "Syria", code: "+963" },
+  { name: "Taiwan", code: "+886" },
+  { name: "Thailand", code: "+66" },
+  { name: "Tunisia", code: "+216" },
+  { name: "Turkey", code: "+90" },
+  { name: "Ukraine", code: "+380" },
+  { name: "United Arab Emirates", code: "+971" },
+  { name: "United Kingdom", code: "+44" },
+  { name: "United States", code: "+1" },
+  { name: "Vietnam", code: "+84" },
+  { name: "Yemen", code: "+967" },
+]
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -20,6 +95,7 @@ export default function ContactPage() {
     subject: "",
     message: "",
   })
+  const [open, setOpen] = useState(false)
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -41,6 +117,8 @@ export default function ContactPage() {
       countryCode: value,
     }))
   }
+
+  const selectedCountry = countryCodes.find((country) => country.code === formData.countryCode)
 
   return (
     <div className="min-h-screen">
@@ -89,7 +167,8 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <h3 className="mb-1 font-semibold text-foreground">Phone</h3>
-                        <p className="text-sm text-muted-foreground">+2 01069443438</p>
+                        <p className="text-sm text-muted-foreground">+1 (555) 123-4567</p>
+                        <p className="text-sm text-muted-foreground">+1 (555) 987-6543</p>
                       </div>
                     </div>
 
@@ -99,9 +178,9 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <h3 className="mb-1 font-semibold text-foreground">Address</h3>
-                        <p className="text-sm text-muted-foreground">12b Abd El-Aziz El-Sayed</p>
-                        <p className="text-sm text-muted-foreground">Huckstep, El Nozha</p>
-                        <p className="text-sm text-muted-foreground">Cairo, Egypt</p>
+                        <p className="text-sm text-muted-foreground">123 Business Street</p>
+                        <p className="text-sm text-muted-foreground">City, State 12345</p>
+                        <p className="text-sm text-muted-foreground">Country</p>
                       </div>
                     </div>
 
@@ -158,126 +237,49 @@ export default function ContactPage() {
                       <div className="space-y-2">
                         <Label htmlFor="phone">Phone Number</Label>
                         <div className="flex gap-2">
-                          <Select value={formData.countryCode} onValueChange={handleCountryCodeChange}>
-                            <SelectTrigger className="w-[120px]">
-                              <SelectValue placeholder="Code" />
-                            </SelectTrigger>
-                            <SelectContent>
-                              {/* Countries in English */}
-                              <SelectItem value="+93">🇦🇫 Afghanistan +93</SelectItem>
-                              <SelectItem value="+355">🇦🇱 Albania +355</SelectItem>
-                              <SelectItem value="+213">🇩🇿 Algeria +213</SelectItem>
-                              <SelectItem value="+1684">🇦🇸 American Samoa +1684</SelectItem>
-                              <SelectItem value="+376">🇦🇩 Andorra +376</SelectItem>
-                              <SelectItem value="+244">🇦🇴 Angola +244</SelectItem>
-                              <SelectItem value="+1264">🇦🇮 Anguilla +1264</SelectItem>
-                              <SelectItem value="+1268">🇦🇬 Antigua and Barbuda +1268</SelectItem>
-                              <SelectItem value="+54">🇦🇷 Argentina +54</SelectItem>
-                              <SelectItem value="+374">🇦🇲 Armenia +374</SelectItem>
-                              <SelectItem value="+297">🇦🇼 Aruba +297</SelectItem>
-                              <SelectItem value="+61">🇦🇺 Australia +61</SelectItem>
-                              <SelectItem value="+43">🇦🇹 Austria +43</SelectItem>
-                              <SelectItem value="+994">🇦🇿 Azerbaijan +994</SelectItem>
-                              <SelectItem value="+1242">🇧🇸 Bahamas +1242</SelectItem>
-                              <SelectItem value="+973">🇧🇭 Bahrain +973</SelectItem>
-                              <SelectItem value="+880">🇧🇩 Bangladesh +880</SelectItem>
-                              <SelectItem value="+1246">🇧🇧 Barbados +1246</SelectItem>
-                              <SelectItem value="+375">🇧🇾 Belarus +375</SelectItem>
-                              <SelectItem value="+32">🇧🇪 Belgium +32</SelectItem>
-                              <SelectItem value="+501">🇧🇿 Belize +501</SelectItem>
-                              <SelectItem value="+229">🇧🇯 Benin +229</SelectItem>
-                              <SelectItem value="+1441">🇧🇲 Bermuda +1441</SelectItem>
-                              <SelectItem value="+975">🇧🇹 Bhutan +975</SelectItem>
-                              <SelectItem value="+591">🇧🇴 Bolivia +591</SelectItem>
-                              <SelectItem value="+387">🇧🇦 Bosnia and Herzegovina +387</SelectItem>
-                              <SelectItem value="+267">🇧🇼 Botswana +267</SelectItem>
-                              <SelectItem value="+55">🇧🇷 Brazil +55</SelectItem>
-                              <SelectItem value="+246">🇮🇴 British Indian Ocean Territory +246</SelectItem>
-                              <SelectItem value="+1284">🇻🇬 British Virgin Islands +1284</SelectItem>
-                              <SelectItem value="+673">🇧🇳 Brunei +673</SelectItem>
-                              <SelectItem value="+359">🇧🇬 Bulgaria +359</SelectItem>
-                              <SelectItem value="+226">🇧🇫 Burkina Faso +226</SelectItem>
-                              <SelectItem value="+257">🇧🇮 Burundi +257</SelectItem>
-                              <SelectItem value="+855">🇰🇭 Cambodia +855</SelectItem>
-                              <SelectItem value="+237">🇨🇲 Cameroon +237</SelectItem>
-                              <SelectItem value="+1">🇨🇦 Canada +1</SelectItem>
-                              <SelectItem value="+238">🇨🇻 Cape Verde +238</SelectItem>
-                              <SelectItem value="+1345">🇰🇾 Cayman Islands +1345</SelectItem>
-                              <SelectItem value="+236">🇨🇫 Central African Republic +236</SelectItem>
-                              <SelectItem value="+235">🇹🇩 Chad +235</SelectItem>
-                              <SelectItem value="+56">🇨🇱 Chile +56</SelectItem>
-                              <SelectItem value="+86">🇨🇳 China +86</SelectItem>
-                              <SelectItem value="+61">🇨🇽 Christmas Island +61</SelectItem>
-                              <SelectItem value="+61">🇨🇨 Cocos (Keeling) Islands +61</SelectItem>
-                              <SelectItem value="+57">🇨🇴 Colombia +57</SelectItem>
-                              <SelectItem value="+269">🇰🇲 Comoros +269</SelectItem>
-                              <SelectItem value="+242">🇨🇬 Republic of the Congo +242</SelectItem>
-                              <SelectItem value="+243">🇨🇩 Democratic Republic of the Congo +243</SelectItem>
-                              <SelectItem value="+682">🇨🇰 Cook Islands +682</SelectItem>
-                              <SelectItem value="+506">🇨🇷 Costa Rica +506</SelectItem>
-                              <SelectItem value="+225">🇨🇮 Ivory Coast (Côte d'Ivoire) +225</SelectItem>
-                              <SelectItem value="+385">🇭🇷 Croatia +385</SelectItem>
-                              <SelectItem value="+53">🇨🇺 Cuba +53</SelectItem>
-                              <SelectItem value="+599">🇨🇼 Curacao +599</SelectItem>
-                              <SelectItem value="+357">🇨🇾 Cyprus +357</SelectItem>
-                              <SelectItem value="+420">🇨🇿 Czech Republic +420</SelectItem>
-                              <SelectItem value="+45">🇩🇰 Denmark +45</SelectItem>
-                              <SelectItem value="+253">🇩🇯 Djibouti +253</SelectItem>
-                              <SelectItem value="+1767">🇩🇲 Dominica +1767</SelectItem>
-                              <SelectItem value="+1809">🇩🇴 Dominican Republic +1809</SelectItem>
-                              <SelectItem value="+593">🇪🇨 Ecuador +593</SelectItem>
-                              <SelectItem value="+20">🇪🇬 Egypt +20</SelectItem>
-                              <SelectItem value="+503">🇸🇻 El Salvador +503</SelectItem>
-                              <SelectItem value="+240">🇬🇶 Equatorial Guinea +240</SelectItem>
-                              <SelectItem value="+291">🇪🇷 Eritrea +291</SelectItem>
-                              <SelectItem value="+372">🇪🇪 Estonia +372</SelectItem>
-                              <SelectItem value="+268">🇸🇿 Eswatini +268</SelectItem>
-                              <SelectItem value="+251">🇪🇹 Ethiopia +251</SelectItem>
-                              <SelectItem value="+500">🇫🇰 Falkland Islands +500</SelectItem>
-                              <SelectItem value="+298">🇫🇴 Faroe Islands +298</SelectItem>
-                              <SelectItem value="+679">🇫🇯 Fiji +679</SelectItem>
-                              <SelectItem value="+358">🇫🇮 Finland +358</SelectItem>
-                              <SelectItem value="+33">🇫🇷 France +33</SelectItem>
-                              <SelectItem value="+594">🇬🇫 French Guiana +594</SelectItem>
-                              <SelectItem value="+689">🇵🇫 French Polynesia +689</SelectItem>
-                              <SelectItem value="+241">🇬🇦 Gabon +241</SelectItem>
-                              <SelectItem value="+220">🇬🇲 Gambia +220</SelectItem>
-                              <SelectItem value="+995">🇬🇪 Georgia +995</SelectItem>
-                              <SelectItem value="+49">🇩🇪 Germany +49</SelectItem>
-                              <SelectItem value="+233">🇬🇭 Ghana +233</SelectItem>
-                              <SelectItem value="+350">🇬🇮 Gibraltar +350</SelectItem>
-                              <SelectItem value="+30">🇬🇷 Greece +30</SelectItem>
-                              <SelectItem value="+299">🇬🇱 Greenland +299</SelectItem>
-                              <SelectItem value="+1473">🇬🇩 Grenada +1473</SelectItem>
-                              <SelectItem value="+590">🇬🇵 Guadeloupe +590</SelectItem>
-                              <SelectItem value="+1671">🇬🇺 Guam +1671</SelectItem>
-                              <SelectItem value="+502">🇬🇹 Guatemala +502</SelectItem>
-                              <SelectItem value="+44">🇬🇬 Guernsey +44</SelectItem>
-                              <SelectItem value="+224">🇬🇳 Guinea +224</SelectItem>
-                              <SelectItem value="+245">🇬🇼 Guinea-Bissau +245</SelectItem>
-                              <SelectItem value="+592">🇬🇾 Guyana +592</SelectItem>
-                              <SelectItem value="+509">🇭🇹 Haiti +509</SelectItem>
-                              <SelectItem value="+504">🇭🇳 Honduras +504</SelectItem>
-                              <SelectItem value="+852">🇭🇰 Hong Kong +852</SelectItem>
-                              <SelectItem value="+36">🇭🇺 Hungary +36</SelectItem>
-                              <SelectItem value="+354">🇮🇸 Iceland +354</SelectItem>
-                              <SelectItem value="+91">🇮🇳 India +91</SelectItem>
-                              <SelectItem value="+62">🇮🇩 Indonesia +62</SelectItem>
-                              <SelectItem value="+98">🇮🇷 Iran +98</SelectItem>
-                              <SelectItem value="+964">🇮🇶 Iraq +964</SelectItem>
-                              <SelectItem value="+353">🇮🇪 Ireland +353</SelectItem>
-                              <SelectItem value="+44">🇮🇲 Isle of Man +44</SelectItem>
-                              <SelectItem value="+972">🇮🇱 Israel +972</SelectItem>
-                              <SelectItem value="+39">🇮🇹 Italy +39</SelectItem>
-                              <SelectItem value="+1876">🇯🇲 Jamaica +1876</SelectItem>
-                              <SelectItem value="+81">🇯🇵 Japan +81</SelectItem>
-                              <SelectItem value="+44">🇯🇪 Jersey +44</SelectItem>
-                              <SelectItem value="+962">🇯🇴 Jordan +962</SelectItem>
-                              <SelectItem value="+7">🇰🇿 Kazakhstan +7</SelectItem>
-                              <SelectItem value="+254">🇰🇪 Kenya +254</SelectItem>
-                              <SelectItem value="+686">🇰🇮 Kiribati +686</SelectItem>
-                            </SelectContent>
-                          </Select>
+                          <Popover open={open} onOpenChange={setOpen}>
+                            <PopoverTrigger asChild>
+                              <Button
+                                variant="outline"
+                                role="combobox"
+                                aria-expanded={open}
+                                className="w-[180px] justify-between bg-transparent"
+                              >
+                                {selectedCountry
+                                  ? `${selectedCountry.name} ${selectedCountry.code}`
+                                  : "Select country..."}
+                                <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
+                              </Button>
+                            </PopoverTrigger>
+                            <PopoverContent className="w-[300px] p-0">
+                              <Command>
+                                <CommandInput placeholder="Search country..." />
+                                <CommandList>
+                                  <CommandEmpty>No country found.</CommandEmpty>
+                                  <CommandGroup>
+                                    {countryCodes.map((country) => (
+                                      <CommandItem
+                                        key={country.code}
+                                        value={`${country.name} ${country.code}`}
+                                        onSelect={() => {
+                                          handleCountryCodeChange(country.code)
+                                          setOpen(false)
+                                        }}
+                                      >
+                                        <Check
+                                          className={cn(
+                                            "mr-2 h-4 w-4",
+                                            formData.countryCode === country.code ? "opacity-100" : "opacity-0",
+                                          )}
+                                        />
+                                        {country.name} ({country.code})
+                                      </CommandItem>
+                                    ))}
+                                  </CommandGroup>
+                                </CommandList>
+                              </Command>
+                            </PopoverContent>
+                          </Popover>
                           <Input
                             id="phone"
                             name="phone"
@@ -310,8 +312,9 @@ export default function ContactPage() {
                         value={formData.message}
                         onChange={handleChange}
                         placeholder="Tell us more about your inquiry..."
-                        rows={6}
+                        rows={12}
                         required
+                        className="resize-none"
                       />
                     </div>
 
@@ -327,21 +330,37 @@ export default function ContactPage() {
       </section>
 
       {/* Map Section */}
-      <section className="border-t border-border bg-muted/30 py-12">
+      <section className="border-t border-border bg-muted/30 py-12 md:py-16">
         <div className="container mx-auto px-4">
-          <div className="overflow-hidden rounded-lg border border-border">
-            <div className="aspect-video w-full bg-muted/50">
-    <iframe
-      src="https://maps.google.com/?cid=7481853068258947086&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ"
-      width="100%"
-      height="100%"
-      style={{ border: 0 }}
-      allowFullScreen
-      loading="lazy"
-      referrerPolicy="no-referrer-when-downgrade"
-      title="12b Abd El-Aziz El-Sayed, Huckstep, El Nozha Location"
-    />
-</div>
+          <div className="mx-auto max-w-5xl">
+            <Card className="border-border">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2 text-foreground">
+                  <MapPin className="h-5 w-5 text-red-600" />
+                  <span>Find Us</span>
+                </CardTitle>
+                <CardDescription>Our head office location in Cairo, Egypt</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="aspect-[21/9] rounded-xl overflow-hidden shadow-xl">
+                  <iframe
+                    src="https://maps.google.com/maps?q=100%20Merghany%20st.,%20Masr%20El%20Gedida,%20Cairo,%20Egypt&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen={true}
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Makanty Office Location"
+                  ></iframe>
+                </div>
+
+                <p className="text-sm text-muted-foreground mt-4 flex items-center justify-center sm:justify-start">
+                  <MapPin className="h-4 w-4 text-secondary mr-2" />
+                  100 Merghany st., Masr El Gedida, Cairo, Egypt
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>

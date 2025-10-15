@@ -142,8 +142,8 @@ export default function ServicesPage() {
               const Icon = service.icon
               return (
                 <Card key={idx} className="border-border transition-all hover:shadow-lg hover:bg-primary group">
-                  <CardContent className="p-6">
-                    <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 group-hover:bg-primary-foreground/20">
+                  <CardContent className="p-6 text-center">
+                    <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 group-hover:bg-primary-foreground/20">
                       <Icon className="h-6 w-6 text-primary group-hover:text-primary-foreground" />
                     </div>
                     <h3 className="mb-2 text-xl font-bold text-foreground group-hover:text-primary-foreground">
