@@ -37,7 +37,87 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+       
+      
 
+      {/* Partners/Brands Section */}
+      <section className="py-12 md:py-16">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="mb-10 text-3xl font-bold text-foreground md:text-4xl">
+            Authorized Partner of Leading Brands
+          </h2>
+          {/* تم استبدال النص بالشعارات */}
+          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
+            <div className="h-10 w-32 md:h-12 md:w-40 opacity-70 hover:opacity-100 transition-opacity">
+              <img 
+                src="/logos/verifone.PNG" 
+                alt="Verifone Logo" 
+                className="h-full w-full object-contain" 
+              />
+            </div>
+            <div className="h-10 w-32 md:h-12 md:w-40 opacity-70 hover:opacity-100 transition-opacity">
+              <img 
+                src="/logos/pax.PNG" 
+                alt="PAX Technology Logo" 
+                className="h-full w-full object-contain" 
+              />
+            </div>
+            <div className="h-10 w-32 md:h-12 md:w-40 opacity-70 hover:opacity-100 transition-opacity">
+              <img 
+                src="/logos/ncr.svg" 
+                alt="NCR Corporation Logo" 
+                className="h-full w-full object-contain" 
+              />
+            </div>
+            <div className="h-10 w-32 md:h-12 md:w-40 opacity-70 hover:opacity-100 transition-opacity">
+              <img 
+                src="/logos/ingenico.svg" 
+                alt="Ingenico Logo" 
+                className="h-full w-full object-contain" 
+              />
+            </div>
+            <div className="h-10 w-32 md:h-12 md:w-40 opacity-70 hover:opacity-100 transition-opacity">
+              <img 
+                src="/logos/sunmi.PNG" 
+                alt="sunmi" 
+                className="h-full w-full object-contain" 
+              />
+            </div>
+            <div className="h-10 w-32 md:h-12 md:w-40 opacity-70 hover:opacity-100 transition-opacity">
+              <img 
+                src="/logos/IMIN.svg" 
+                alt="IMIN" 
+                className="h-full w-full object-contain" 
+              />
+            </div>
+            <div className="h-10 w-32 md:h-12 md:w-40 opacity-70 hover:opacity-100 transition-opacity">
+              <img 
+                src="/logos/Feitian.png" 
+                alt="Feitian" 
+                className="h-full w-full object-contain" 
+              />
+            </div>
+            <div className="h-10 w-32 md:h-12 md:w-40 opacity-70 hover:opacity-100 transition-opacity">
+              <img 
+                src="/logos/NewPOS.png" 
+                alt="NewPOS" 
+                className="h-full w-full object-contain" 
+              />
+            </div>
+            <div className="h-10 w-32 md:h-12 md:w-40 opacity-70 hover:opacity-100 transition-opacity">
+              <img 
+                src="/logos/NEXGO.svg" 
+                alt="NEXGO" 
+                className="h-full w-full object-contain" 
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+
+     
       {/* Trusted Brands Section */}
       <section className="border-b border-border bg-gradient-to-b from-muted/50 to-background py-12 overflow-hidden">
         <div className="container mx-auto px-4">
