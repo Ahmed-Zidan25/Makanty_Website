@@ -122,15 +122,4 @@
   body {
     @apply bg-background text-foreground;
   }
-  
-  /* --- EDITED CLASS FOR CARD HOVER --- */
-  .card-hover-slate:hover {
-    background-color: #cbd5e1; /* Light Mode Hover Color: #cbd5e1 */
-  }
-  
-  /* Dark Mode rule updated to use the same color: #cbd5e1 */
-  .dark .card-hover-slate:hover {
-    background-color: #cbd5e1; /* Dark Mode Hover Color: #cbd5e1 */
-  }
-  /* ----------------------------------- */
 }
