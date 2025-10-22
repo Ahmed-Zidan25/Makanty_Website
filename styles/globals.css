@@ -123,14 +123,14 @@
     @apply bg-background text-foreground;
   }
   
-  /* --- NEW CLASS FOR CARD HOVER --- */
+  /* --- EDITED CLASS FOR CARD HOVER --- */
   .card-hover-slate:hover {
-    background-color: #cbd5e1; /* The requested color */
+    background-color: #cbd5e1; /* Light Mode Hover Color: #cbd5e1 */
   }
   
-  /* Optional: Define a dark mode hover color */
+  /* Dark Mode rule updated to use the same color: #cbd5e1 */
   .dark .card-hover-slate:hover {
-    background-color: oklch(0.269 0 0); /* Example: using dark mode secondary color for contrast */
+    background-color: #cbd5e1; /* Dark Mode Hover Color: #cbd5e1 */
   }
-  /* -------------------------------- */
+  /* ----------------------------------- */
 }
