@@ -19,7 +19,7 @@
   --secondary-foreground: oklch(0.15 0 0);
   --muted: oklch(0.96 0.005 250);
   --muted-foreground: oklch(0.45 0.01 250);
-  --accent: oklch(0.22 0.08 250); /* #082c6a - dark blue for hover states */
+  --accent: oklch(89.234% 0.03498 256.392); /* #082c6a - dark blue for hover states */
   --accent-foreground: oklch(0.99 0 0);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.99 0 0);
