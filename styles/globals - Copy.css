@@ -122,15 +122,4 @@
   body {
     @apply bg-background text-foreground;
   }
-  
-  /* --- NEW CLASS FOR CARD HOVER --- */
-  .card-hover-slate:hover {
-    background-color: #cbd5e1; /* The requested color */
-  }
-  
-  /* Optional: Define a dark mode hover color */
-  .dark .card-hover-slate:hover {
-    background-color: oklch(0.269 0 0); /* Example: using dark mode secondary color for contrast */
-  }
-  /* -------------------------------- */
 }
