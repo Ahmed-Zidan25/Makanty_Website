@@ -146,3 +146,11 @@
 .pause-animation:hover {
   animation-play-state: paused;
 }
+.video-background {
+  z-index: -1;
+  /* Also ensure these are applied for sizing/positioning */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
