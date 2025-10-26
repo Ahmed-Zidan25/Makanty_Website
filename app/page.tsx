@@ -142,7 +142,7 @@ export default function HomePage() {
           </div>
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            <Card className="border-border transition-all hover:shadow-lg">
+            <Card className="border-border transition-all">
               <CardContent className="p-6 text-center">
                 <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 group-hover:bg-primary-foreground/20">
                   <Package className="h-6 w-6 text-primary group-hover:text-primary-foreground" />
