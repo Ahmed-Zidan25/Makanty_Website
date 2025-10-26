@@ -7,92 +7,48 @@ export default function HomePage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      {/* <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary/95 to-primary/90 text-primary-foreground">
-        <div className="absolute inset-0 bg-[url('/pos-devices-background.jpg')] opacity-10" />
-        <div className="container relative mx-auto px-4 py-10 md:py-16">
-          <div className="mx-auto max-w-3xl text-center">
-            <h1 className="mb-6 text-4xl font-bold leading-tight text-balance md:text-5xl lg:text-6xl">
-              Makanty – Empowering Every Transaction
-            </h1>
-            <p className="mb-8 text-lg text-primary-foreground/90 leading-relaxed md:text-xl">
-              A comprehensive fintech enabler and POS infrastructure provider — bridging hardware, software, and
-              services to power every payment. We supply, support, and sustain the full fintech journey.
-            </p>
-            <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
-              <Button asChild size="lg" variant="secondary" className="text-base">
-                <Link href="/products">
-                  Explore Products
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
-              <Button
-                asChild
-                size="lg"
-                variant="outline"
-                className="border-primary-foreground/20 bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20 text-base"
-              >
-                <Link href="/quote">Get a Quote</Link>
-              </Button>
-            </div>
+      <section className="relative w-full overflow-hidden">
+      <video autoPlay muted loop className="absolute inset-0 w-full h-full object-cover">
+        <source
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/background-video-2CIF5UEjEF4Aw23181pScE6AJ8x3qq.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+
+      <div className="absolute inset-0 bg-black/40" />
+
+      <div className="container relative mx-auto px-4 py-10 md:py-16 z-10">
+        <div className="mx-auto max-w-3xl text-center">
+          <h1 className="mb-6 text-4xl font-bold leading-tight text-balance md:text-5xl lg:text-6xl text-white">
+            Makanty – Empowering Every Transaction
+          </h1>
+          <p className="mb-8 text-lg text-white/90 leading-relaxed md:text-xl">
+            A comprehensive fintech enabler and POS infrastructure provider — bridging hardware, software, and services
+            to power every payment. We supply, support, and sustain the full fintech journey.
+          </p>
+          <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
+            <Button asChild size="lg" variant="secondary" className="text-base">
+              <Link href="/products">
+                Explore Products
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+            </Button>
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="border-white/20 bg-white/10 text-white hover:bg-white/20 text-base"
+            >
+              <Link href="/quote">Get a Quote</Link>
+            </Button>
           </div>
         </div>
-      </section> */}
-
-       <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary/95 to-primary/90 text-primary-foreground">
-  {/* 1. Muted Video Background Element */}
-  <video
-    className="absolute inset-0 w-full h-full object-cover z-[-1]"
-    autoPlay
-    loop
-    muted
-    playsInline
-    // Note: The z-index is crucial to place it below the content and gradient overlay
-  >
-    {/* Update the src to your video path inside the public folder */}
-    <source src="/videos/background-video.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
-
-  {/* 2. Gradient Overlay (optional, but good for readability over video) */}
-  {/* The original section tag already has a background color and gradient via Tailwind classes, 
-      which will serve as the overlay over the video due to the video's z-index being -1. 
-      You can adjust the 'via-primary/95' and 'to-primary/90' opacities for better contrast. */}
-  
-  {/* The original image overlay is removed: 
-  <div className="absolute inset-0 bg-[url('/pos-devices-background.jpg')] opacity-10" /> 
-  
-  If you want a separate, subtle overlay on top of the video but under the text:
-  <div className="absolute inset-0 bg-black/30 z-0" />
-  
-  *The content is wrapped in a container that sits above the background and video.* */}
-  <div className="container relative mx-auto px-4 py-10 md:py-16 z-10">
-    <div className="mx-auto max-w-3xl text-center">
-      <h1 className="mb-6 text-4xl font-bold leading-tight text-balance md:text-5xl lg:text-6xl">
-        Makanty – Empowering Every Transaction
-      </h1>
-      <p className="mb-8 text-lg text-primary-foreground/90 leading-relaxed md:text-xl">
-        A comprehensive fintech enabler and POS infrastructure provider — bridging hardware, software, and
-        services to power every payment. We supply, support, and sustain the full fintech journey.
-      </p>
-      <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
-        <Button asChild size="lg" variant="secondary" className="text-base">
-          <Link href="/products">
-            Explore Products
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Link>
-        </Button>
-        <Button
-          asChild
-          size="lg"
-          variant="outline"
-          className="border-primary-foreground/20 bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20 text-base"
-        >
-          <Link href="/quote">Get a Quote</Link>
-        </Button>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
+
+      
+    
       
 
       {/* Partners/Brands Section */}
