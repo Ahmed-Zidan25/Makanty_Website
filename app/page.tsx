@@ -142,7 +142,7 @@ export default function HomePage() {
           </div>
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            <Card className="border-border transition-all hover:shadow-lg hover:bg-primary hover:text-primary-foreground group">
+            <Card className="border-border transition-all hover:shadow-lg hover:bg-[#f1f5f9] hover:text-foreground group">
               <CardContent className="p-6 text-center">
                 <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 group-hover:bg-primary-foreground/20">
                   <Package className="h-6 w-6 text-primary group-hover:text-primary-foreground" />
@@ -155,8 +155,8 @@ export default function HomePage() {
                 </p>
               </CardContent>
             </Card>
-
-            <Card className="border-border transition-all hover:shadow-lg hover:bg-primary hover:text-primary-foreground group">
+             <Card className="border-border transition-all hover:shadow-lg hover:bg-[#f1f5f9] hover:text-foreground group">
+            
               <CardContent className="p-6 text-center">
                 <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10 group-hover:bg-primary-foreground/20">
                   <Wrench className="h-6 w-6 text-secondary group-hover:text-primary-foreground" />
@@ -170,7 +170,7 @@ export default function HomePage() {
               </CardContent>
             </Card>
 
-            <Card className="border-border transition-all hover:shadow-lg hover:bg-primary hover:text-primary-foreground group">
+            <Card className="border-border transition-all hover:shadow-lg hover:bg-[#f1f5f9] hover:text-foreground group">
               <CardContent className="p-6 text-center">
                 <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-accent/10 group-hover:bg-primary-foreground/20">
                   <Shield className="h-6 w-6 text-accent group-hover:text-primary-foreground" />
@@ -184,7 +184,7 @@ export default function HomePage() {
               </CardContent>
             </Card>
 
-            <Card className="border-border transition-all hover:shadow-lg hover:bg-primary hover:text-primary-foreground group">
+            <Card className="border-border transition-all hover:shadow-lg hover:bg-[#f1f5f9] hover:text-foreground group">
               <CardContent className="p-6 text-center">
                 <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 group-hover:bg-primary-foreground/20">
                   <Zap className="h-6 w-6 text-primary group-hover:text-primary-foreground" />
@@ -198,7 +198,7 @@ export default function HomePage() {
               </CardContent>
             </Card>
 
-            <Card className="border-border transition-all hover:shadow-lg hover:bg-primary hover:text-primary-foreground group">
+            <Card className="border-border transition-all hover:shadow-lg hover:bg-[#f1f5f9] hover:text-foreground group">
               <CardContent className="p-6 text-center">
                 <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10 group-hover:bg-primary-foreground/20">
                   <Headphones className="h-6 w-6 text-secondary group-hover:text-primary-foreground" />
@@ -212,7 +212,7 @@ export default function HomePage() {
               </CardContent>
             </Card>
 
-            <Card className="border-border transition-all hover:shadow-lg hover:bg-primary hover:text-primary-foreground group">
+            <Card className="border-border transition-all hover:shadow-lg hover:bg-[#f1f5f9] hover:text-foreground group">
               <CardContent className="p-6 text-center">
                 <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-accent/10 group-hover:bg-primary-foreground/20">
                   <CheckCircle className="h-6 w-6 text-accent group-hover:text-primary-foreground" />
@@ -226,7 +226,7 @@ export default function HomePage() {
               </CardContent>
             </Card>
 
-            <Card className="border-border transition-all hover:shadow-lg hover:bg-primary hover:text-primary-foreground group">
+            <Card className="border-border transition-all hover:shadow-lg hover:bg-[#f1f5f9] hover:text-foreground group">
               <CardContent className="p-6 text-center">
                 <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 group-hover:bg-primary-foreground/20">
                   <Package className="h-6 w-6 text-primary group-hover:text-primary-foreground" />
@@ -240,7 +240,7 @@ export default function HomePage() {
               </CardContent>
             </Card>
 
-            <Card className="border-border transition-all hover:shadow-lg hover:bg-primary hover:text-primary-foreground group">
+            <Card className="border-border transition-all hover:shadow-lg hover:bg-[#f1f5f9] hover:text-foreground group">
               <CardContent className="p-6 text-center">
                 <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10 group-hover:bg-primary-foreground/20">
                   <Globe className="h-6 w-6 text-secondary group-hover:text-primary-foreground" />
@@ -268,7 +268,7 @@ export default function HomePage() {
           </div>
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <Card className="border-border transition-all hover:shadow-lg hover:bg-primary hover:text-primary-foreground group">
+            <Card className="border-border transition-all hover:shadow-lg hover:bg-[#f1f5f9] hover:text-foreground group">
               <CardContent className="p-6 text-center">
                 <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 group-hover:bg-primary-foreground/20">
                   <Package className="h-6 w-6 text-primary group-hover:text-primary-foreground" />
@@ -282,7 +282,7 @@ export default function HomePage() {
               </CardContent>
             </Card>
 
-            <Card className="border-border transition-all hover:shadow-lg hover:bg-primary hover:text-primary-foreground group">
+            <Card className="border-border transition-all hover:shadow-lg hover:bg-[#f1f5f9] hover:text-foreground group">
               <CardContent className="p-6 text-center">
                 <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10 group-hover:bg-primary-foreground/20">
                   <Shield className="h-6 w-6 text-secondary group-hover:text-primary-foreground" />
@@ -296,7 +296,7 @@ export default function HomePage() {
               </CardContent>
             </Card>
 
-            <Card className="border-border transition-all hover:shadow-lg hover:bg-primary hover:text-primary-foreground group">
+            <Card className="border-border transition-all hover:shadow-lg hover:bg-[#f1f5f9] hover:text-foreground group">
               <CardContent className="p-6 text-center">
                 <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-accent/10 group-hover:bg-primary-foreground/20">
                   <Globe className="h-6 w-6 text-accent group-hover:text-primary-foreground" />
@@ -310,7 +310,7 @@ export default function HomePage() {
               </CardContent>
             </Card>
 
-            <Card className="border-border transition-all hover:shadow-lg hover:bg-primary hover:text-primary-foreground group">
+            <Card className="border-border transition-all hover:shadow-lg hover:bg-[#f1f5f9] hover:text-foreground group">
               <CardContent className="p-6 text-center">
                 <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 group-hover:bg-primary-foreground/20">
                   <Wrench className="h-6 w-6 text-primary group-hover:text-primary-foreground" />
@@ -324,7 +324,7 @@ export default function HomePage() {
               </CardContent>
             </Card>
 
-            <Card className="border-border transition-all hover:shadow-lg hover:bg-primary hover:text-primary-foreground group">
+            <Card className="border-border transition-all hover:shadow-lg hover:bg-[#f1f5f9] hover:text-foreground group">
               <CardContent className="p-6 text-center">
                 <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10 group-hover:bg-primary-foreground/20">
                   <CheckCircle className="h-6 w-6 text-secondary group-hover:text-primary-foreground" />
@@ -338,7 +338,7 @@ export default function HomePage() {
               </CardContent>
             </Card>
 
-            <Card className="border-border transition-all hover:shadow-lg hover:bg-primary hover:text-primary-foreground group">
+            <Card className="border-border transition-all hover:shadow-lg hover:bg-[#f1f5f9] hover:text-foreground group">
               <CardContent className="p-6 text-center">
                 <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-accent/10 group-hover:bg-primary-foreground/20">
                   <Zap className="h-6 w-6 text-accent group-hover:text-primary-foreground" />
