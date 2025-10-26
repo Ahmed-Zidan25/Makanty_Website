@@ -105,12 +105,12 @@ export function Footer() {
                   rel="noopener noreferrer"
                   className="text-sm text-muted-foreground transition-colors hover:text-primary"
                 >
-                  +1 (555) 123-4567
+                 +2 01069443438
                 </a>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="h-5 w-5 text-primary flex-shrink-0" />
-                <span className="text-sm text-muted-foreground">123 Business St, City, Country</span>
+                <span className="text-sm text-muted-foreground">Al Bahr Al-Raisi Street, Sheraton, El-Nozha, Cairo, Egypt</span>
               </li>
             </ul>
           </div>
