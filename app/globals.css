@@ -154,3 +154,7 @@
   height: 100%;
   object-fit: cover;
 }
+
+@import 'swiper/css';
+@import 'swiper/css/pagination';
+@import 'swiper/css/navigation';
