@@ -3,12 +3,66 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight, CheckCircle, Wrench, Package, Headphones, Shield, Zap, Globe } from "lucide-react"
 
-// Import the MarqueeBanner component
-import { MarqueeBanner } from "@/components/MarqueeBanner" 
 
-// Define your messages for the banner
-const marketingMessages = [
-<div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
+
+
+export default function HomePage() {
+  return (
+    <div className="flex flex-col">
+      {/* Hero Section */}
+      <section className="relative w-full overflow-hidden">
+      <video autoPlay muted loop className="absolute inset-0 w-full h-full object-cover">
+        <source
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/background-video-2CIF5UEjEF4Aw23181pScE6AJ8x3qq.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+
+      <div className="absolute inset-0 bg-black/40" />
+
+      <div className="container relative mx-auto px-4 py-10 md:py-16 z-10">
+        <div className="mx-auto max-w-3xl text-center">
+          <h1 className="mb-6 text-4xl font-bold leading-tight text-balance md:text-5xl lg:text-6xl text-white">
+            Makanty – Empowering Every Transaction
+          </h1>
+          <p className="mb-8 text-lg text-white/90 leading-relaxed md:text-xl">
+            A comprehensive fintech enabler and POS infrastructure provider — bridging hardware, software, and services
+            to power every payment. We supply, support, and sustain the full fintech journey.
+          </p>
+          <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
+            <Button asChild size="lg" variant="secondary" className="text-base">
+              <Link href="/products">
+                Explore Products
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+            </Button>
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="border-white/20 bg-white/10 text-white hover:bg-white/20 text-base"
+            >
+              <Link href="/quote">Get a Quote</Link>
+            </Button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      
+      {/* Partners/Brands Section */}
+      <section className="py-12 md:py-16">
+         <div className="mb-10 text-center">
+            <div className="inline-flex items-center gap-3 mb-3">
+              <div className="h-px w-12 bg-gradient-to-r from-transparent to-primary"></div>
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground">Authorized Partner of Leading Brands</h2>
+              <div className="h-px w-12 bg-gradient-to-l from-transparent to-primary"></div>
+            </div>
+            <p className="text-sm text-muted-foreground">Trusted by the world's top POS manufacturers</p>
+          </div>
+          {/* تم استبدال النص بالشعارات */}
+          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
             
             <div className="h-10 w-32 md:h-12 md:w-40 opacity-70 hover:opacity-100 transition-opacity">
               <img 
@@ -74,69 +128,6 @@ const marketingMessages = [
               />
           </div>
         </div>
-  
-];
-
-
-export default function HomePage() {
-  return (
-    <div className="flex flex-col">
-      {/* Hero Section */}
-      <section className="relative w-full overflow-hidden">
-      <video autoPlay muted loop className="absolute inset-0 w-full h-full object-cover">
-        <source
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/background-video-2CIF5UEjEF4Aw23181pScE6AJ8x3qq.mp4"
-          type="video/mp4"
-        />
-        Your browser does not support the video tag.
-      </video>
-
-      <div className="absolute inset-0 bg-black/40" />
-
-      <div className="container relative mx-auto px-4 py-10 md:py-16 z-10">
-        <div className="mx-auto max-w-3xl text-center">
-          <h1 className="mb-6 text-4xl font-bold leading-tight text-balance md:text-5xl lg:text-6xl text-white">
-            Makanty – Empowering Every Transaction
-          </h1>
-          <p className="mb-8 text-lg text-white/90 leading-relaxed md:text-xl">
-            A comprehensive fintech enabler and POS infrastructure provider — bridging hardware, software, and services
-            to power every payment. We supply, support, and sustain the full fintech journey.
-          </p>
-          <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
-            <Button asChild size="lg" variant="secondary" className="text-base">
-              <Link href="/products">
-                Explore Products
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-            <Button
-              asChild
-              size="lg"
-              variant="outline"
-              className="border-white/20 bg-white/10 text-white hover:bg-white/20 text-base"
-            >
-              <Link href="/quote">Get a Quote</Link>
-            </Button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-      
-      {/* Partners/Brands Section */}
-      <section className="py-12 md:py-16">
-         <div className="mb-10 text-center">
-            <div className="inline-flex items-center gap-3 mb-3">
-              <div className="h-px w-12 bg-gradient-to-r from-transparent to-primary"></div>
-              <h2 className="text-2xl md:text-3xl font-bold text-foreground">Authorized Partner of Leading Brands</h2>
-              <div className="h-px w-12 bg-gradient-to-l from-transparent to-primary"></div>
-            </div>
-            <p className="text-sm text-muted-foreground">Trusted by the world's top POS manufacturers</p>
-          </div>
-          {/* تم استبدال النص بالشعارات */}
-          
-
-         <MarqueeBanner items={marketingMessages} /> 
 
  </section>
 
