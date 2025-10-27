@@ -1,21 +1,20 @@
 // tailwind.config.js
 
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   // ... other configuration ...
   theme: {
     extend: {
-      // ADD THIS SECTION
+      // 1. Define the custom movement
       keyframes: {
         marquee: {
           '0%': { transform: 'translateX(0%)' },
           '100%': { transform: 'translateX(-50%)' },
         },
       },
+      // 2. Define the animation speed and loop
       animation: {
         marquee: 'marquee 15s linear infinite', 
       },
-      // END OF NEW SECTION
     },
   },
   // ... rest of the file ...
