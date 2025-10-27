@@ -2,9 +2,26 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight, CheckCircle, Wrench, Package, Headphones, Shield, Zap, Globe } from "lucide-react"
+import { ImageSlider } from "@/components/ImageSlider";
 
+const sliderImages = [
+  { src: '/images/slider-promotion-1.jpg', alt: 'Latest POS Devices promotion' },
+  { src: '/images/slider-service-field.jpg', alt: 'Nationwide Field Service Support' },
+  { src: '/images/slider-brand-ingenico.jpg', alt: 'Official Ingenico Partner' },
+];
 
+// ... after MarqueeBanner ...
 
+{/* Image Slider */}
+<section className="pt-16 md:pt-24 bg-white">
+  <div className="container mx-auto px-4">
+    <ImageSlider images={sliderImages} />
+  </div>
+</section>
+
+{/* Ecosystem Section */}
+<section className="py-16 md:py-24">
+// ...
 
 export default function HomePage() {
   return (
@@ -85,7 +102,7 @@ export default function HomePage() {
                 className="h-full w-full object-contain" 
               />
             </div>
-            <div className="h-10 w-32 md:h-12 md:w-40 opacity-70 hover:opacity-100 transition-opacity">
+            <div className="h-15 w-42 md:h-12 md:w-40 opacity-70 hover:opacity-100 transition-opacity">
               <img 
                 src="/logos/verifone.PNG" 
                 alt="verifone Logo" 
