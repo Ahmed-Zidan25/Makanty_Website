@@ -4,9 +4,6 @@ import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight, CheckCircle, Wrench, Package, Headphones, Shield, Zap, Globe } from "lucide-react"
 
 
-{/* Ecosystem Section */}
-<section className="py-16 md:py-24">
-// ...
 
 export default function HomePage() {
   return (
