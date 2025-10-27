@@ -143,7 +143,7 @@ export default function HomePage() {
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           
-           <Card className="transition-all duration-300 border-border">
+       {/*     <Card className="transition-all duration-300 border-border">
   <CardContent className="p-6 text-center">
     <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg">
       <Package className="h-6 w-6 text-primary" />
@@ -155,13 +155,25 @@ export default function HomePage() {
                   Android Smart POS, Traditional POS, Desktop & Countertop, Mini & Mobile terminals
                 </p>
   </CardContent>
-</Card>
+</Card> */}
 
-            
-             <Card className="group hover:shadow-lg transition-all duration-300 border-border">
+     <Card className="transition-all duration-300 border-border hover:shadow-lg hover:shadow-gray-200/50">
+    <CardContent className="p-6 text-center">
+      <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg">
+        <Package className="h-6 w-6 text-primary" />
+      </div>
+      <h3 className="mb-2 text-xl font-semibold text-foreground">
+        POS Devices
+      </h3>
+      <p className="text-muted-foreground leading-relaxed text-sm">
+        Android Smart POS, Traditional POS, Desktop & Countertop, Mini & Mobile terminals
+      </p>
+    </CardContent>
+  </Card>
+             <Card className="transition-all duration-300 border-border hover:shadow-lg hover:shadow-gray-200/50">
             
               <CardContent className="p-6 text-center">
-                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10 group-hover:bg-primary-foreground/20">
+                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg">
                   <Wrench className="h-6 w-6 text-secondary group-hover:text-primary-foreground" />
                 </div>
                 <h3 className="mb-2 text-xl font-semibold text-foreground group-hover:text-primary-foreground">
@@ -173,9 +185,9 @@ export default function HomePage() {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 border-border">
+            <Card className="transition-all duration-300 border-border hover:shadow-lg hover:shadow-gray-200/50">
               <CardContent className="p-6 text-center">
-                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-accent/10 group-hover:bg-primary-foreground/20">
+                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg">
                   <Shield className="h-6 w-6 text-accent group-hover:text-primary-foreground" />
                 </div>
                 <h3 className="mb-2 text-xl font-semibold text-foreground group-hover:text-primary-foreground">
@@ -187,9 +199,9 @@ export default function HomePage() {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 border-border">
+            <Card className="transition-all duration-300 border-border hover:shadow-lg hover:shadow-gray-200/50">
               <CardContent className="p-6 text-center">
-                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 group-hover:bg-primary-foreground/20">
+                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg">
                   <Zap className="h-6 w-6 text-primary group-hover:text-primary-foreground" />
                 </div>
                 <h3 className="mb-2 text-xl font-semibold text-foreground group-hover:text-primary-foreground">
@@ -201,9 +213,9 @@ export default function HomePage() {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 border-border">
+            <Card className="transition-all duration-300 border-border hover:shadow-lg hover:shadow-gray-200/50">
               <CardContent className="p-6 text-center">
-                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10 group-hover:bg-primary-foreground/20">
+                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg">
                   <Headphones className="h-6 w-6 text-secondary group-hover:text-primary-foreground" />
                 </div>
                 <h3 className="mb-2 text-xl font-semibold text-foreground group-hover:text-primary-foreground">
@@ -215,9 +227,9 @@ export default function HomePage() {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 border-border">
+            <Card className="transition-all duration-300 border-border hover:shadow-lg hover:shadow-gray-200/50">
               <CardContent className="p-6 text-center">
-                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-accent/10 group-hover:bg-primary-foreground/20">
+                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg">
                   <CheckCircle className="h-6 w-6 text-accent group-hover:text-primary-foreground" />
                 </div>
                 <h3 className="mb-2 text-xl font-semibold text-foreground group-hover:text-primary-foreground">
@@ -229,7 +241,7 @@ export default function HomePage() {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 border-border">
+            <Card className="transition-all duration-300 border-border hover:shadow-lg hover:shadow-gray-200/50">
               <CardContent className="p-6 text-center">
                 <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 group-hover:bg-primary-foreground/20">
                   <Package className="h-6 w-6 text-primary group-hover:text-primary-foreground" />
@@ -243,9 +255,9 @@ export default function HomePage() {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 border-border">
+            <Card className="transition-all duration-300 border-border hover:shadow-lg hover:shadow-gray-200/50">
               <CardContent className="p-6 text-center">
-                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10 group-hover:bg-primary-foreground/20">
+                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg">
                   <Globe className="h-6 w-6 text-secondary group-hover:text-primary-foreground" />
                 </div>
                 <h3 className="mb-2 text-xl font-semibold text-foreground group-hover:text-primary-foreground">
@@ -271,9 +283,9 @@ export default function HomePage() {
           </div>
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <Card className="group hover:shadow-lg transition-all duration-300 border-border">
+            <Card className="transition-all duration-300 border-border hover:shadow-lg hover:shadow-gray-200/50">
               <CardContent className="p-6 text-center">
-                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 group-hover:bg-primary-foreground/20">
+                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg">
                   <Package className="h-6 w-6 text-primary group-hover:text-primary-foreground" />
                 </div>
                 <h3 className="mb-2 text-xl font-semibold text-foreground group-hover:text-primary-foreground">
@@ -285,9 +297,9 @@ export default function HomePage() {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 border-border">
+            <Card className="transition-all duration-300 border-border hover:shadow-lg hover:shadow-gray-200/50">
               <CardContent className="p-6 text-center">
-                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10 group-hover:bg-primary-foreground/20">
+               <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg">
                   <Shield className="h-6 w-6 text-secondary group-hover:text-primary-foreground" />
                 </div>
                 <h3 className="mb-2 text-xl font-semibold text-foreground group-hover:text-primary-foreground">
@@ -299,9 +311,9 @@ export default function HomePage() {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 border-border">
+            <Card className="transition-all duration-300 border-border hover:shadow-lg hover:shadow-gray-200/50">
               <CardContent className="p-6 text-center">
-                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-accent/10 group-hover:bg-primary-foreground/20">
+                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg">
                   <Globe className="h-6 w-6 text-accent group-hover:text-primary-foreground" />
                 </div>
                 <h3 className="mb-2 text-xl font-semibold text-foreground group-hover:text-primary-foreground">
@@ -313,9 +325,9 @@ export default function HomePage() {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 border-border">
+            <Card className="transition-all duration-300 border-border hover:shadow-lg hover:shadow-gray-200/50">
               <CardContent className="p-6 text-center">
-                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 group-hover:bg-primary-foreground/20">
+                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg">
                   <Wrench className="h-6 w-6 text-primary group-hover:text-primary-foreground" />
                 </div>
                 <h3 className="mb-2 text-xl font-semibold text-foreground group-hover:text-primary-foreground">
@@ -327,9 +339,9 @@ export default function HomePage() {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 border-border">
+            <Card className="transition-all duration-300 border-border hover:shadow-lg hover:shadow-gray-200/50">
               <CardContent className="p-6 text-center">
-                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10 group-hover:bg-primary-foreground/20">
+                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg">
                   <CheckCircle className="h-6 w-6 text-secondary group-hover:text-primary-foreground" />
                 </div>
                 <h3 className="mb-2 text-xl font-semibold text-foreground group-hover:text-primary-foreground">
@@ -341,9 +353,9 @@ export default function HomePage() {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 border-border">
+            <Card className="transition-all duration-300 border-border hover:shadow-lg hover:shadow-gray-200/50">
               <CardContent className="p-6 text-center">
-                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-accent/10 group-hover:bg-primary-foreground/20">
+                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg">
                   <Zap className="h-6 w-6 text-accent group-hover:text-primary-foreground" />
                 </div>
                 <h3 className="mb-2 text-xl font-semibold text-foreground group-hover:text-primary-foreground">
