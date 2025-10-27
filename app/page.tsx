@@ -145,7 +145,7 @@ export default function HomePage() {
           
            <Card className="transition-all duration-300 border-border">
   <CardContent className="p-6 text-center">
-    <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
+    <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg">
       <Package className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="mb-2 text-xl font-semibold text-foreground group-hover:text-primary-foreground">
