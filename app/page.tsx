@@ -148,10 +148,10 @@ export default function HomePage() {
     <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg">
       <Package className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="mb-2 text-xl font-semibold text-foreground group-hover:text-primary-foreground">
+                <h3 className="mb-2 text-xl font-semibold text-foreground">
                   POS Devices
                 </h3>
-                <p className="text-muted-foreground group-hover:text-primary-foreground/90 leading-relaxed text-sm">
+                <p className="text-muted-foreground/90 leading-relaxed text-sm">
                   Android Smart POS, Traditional POS, Desktop & Countertop, Mini & Mobile terminals
                 </p>
   </CardContent>
@@ -174,12 +174,12 @@ export default function HomePage() {
             
               <CardContent className="p-6 text-center">
                 <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg">
-                  <Wrench className="h-6 w-6 text-secondary group-hover:text-primary-foreground" />
+                  <Wrench className="h-6 w-6 text-secondary" />
                 </div>
-                <h3 className="mb-2 text-xl font-semibold text-foreground group-hover:text-primary-foreground">
+                <h3 className="mb-2 text-xl font-semibold text-foreground">
                   Field Service
                 </h3>
-                <p className="text-muted-foreground group-hover:text-primary-foreground/90 leading-relaxed text-sm">
+                <p className="text-muted-foreground/90 leading-relaxed text-sm">
                   Deployment, installation, on-site repair, maintenance, and asset tracking
                 </p>
               </CardContent>
@@ -188,12 +188,12 @@ export default function HomePage() {
             <Card className="transition-all duration-300 border-border hover:shadow-lg hover:shadow-gray-200/50">
               <CardContent className="p-6 text-center">
                 <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg">
-                  <Shield className="h-6 w-6 text-accent group-hover:text-primary-foreground" />
+                  <Shield className="h-6 w-6 text-accent" />
                 </div>
-                <h3 className="mb-2 text-xl font-semibold text-foreground group-hover:text-primary-foreground">
+                <h3 className="mb-2 text-xl font-semibold text-foreground">
                   Payment Solutions
                 </h3>
-                <p className="text-muted-foreground group-hover:text-primary-foreground/90 leading-relaxed text-sm">
+                <p className="text-muted-foreground/90 leading-relaxed text-sm">
                   Bill payments, e-wallet, QR acceptance, payment gateway, and white-label apps
                 </p>
               </CardContent>
@@ -202,12 +202,12 @@ export default function HomePage() {
             <Card className="transition-all duration-300 border-border hover:shadow-lg hover:shadow-gray-200/50">
               <CardContent className="p-6 text-center">
                 <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg">
-                  <Zap className="h-6 w-6 text-primary group-hover:text-primary-foreground" />
+                  <Zap className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="mb-2 text-xl font-semibold text-foreground group-hover:text-primary-foreground">
+                <h3 className="mb-2 text-xl font-semibold text-foreground">
                   Spare Parts & Consumables
                 </h3>
-                <p className="text-muted-foreground group-hover:text-primary-foreground/90 leading-relaxed text-sm">
+                <p className="text-muted-foreground/90 leading-relaxed text-sm">
                   Chargers, screens, batteries, paper rolls, SIM cards, and branding materials
                 </p>
               </CardContent>
@@ -216,12 +216,12 @@ export default function HomePage() {
             <Card className="transition-all duration-300 border-border hover:shadow-lg hover:shadow-gray-200/50">
               <CardContent className="p-6 text-center">
                 <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg">
-                  <Headphones className="h-6 w-6 text-secondary group-hover:text-primary-foreground" />
+                  <Headphones className="h-6 w-6 text-secondary" />
                 </div>
-                <h3 className="mb-2 text-xl font-semibold text-foreground group-hover:text-primary-foreground">
+                <h3 className="mb-2 text-xl font-semibold text-foreground">
                   POS Maintenance
                 </h3>
-                <p className="text-muted-foreground group-hover:text-primary-foreground/90 leading-relaxed text-sm">
+                <p className="text-muted-foreground/90 leading-relaxed text-sm">
                   Preventive & corrective maintenance, firmware updates, and remote diagnostics
                 </p>
               </CardContent>
@@ -230,12 +230,12 @@ export default function HomePage() {
             <Card className="transition-all duration-300 border-border hover:shadow-lg hover:shadow-gray-200/50">
               <CardContent className="p-6 text-center">
                 <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg">
-                  <CheckCircle className="h-6 w-6 text-accent group-hover:text-primary-foreground" />
+                  <CheckCircle className="h-6 w-6 text-accent" />
                 </div>
-                <h3 className="mb-2 text-xl font-semibold text-foreground group-hover:text-primary-foreground">
+                <h3 className="mb-2 text-xl font-semibold text-foreground">
                   Trading & Refurbishment
                 </h3>
-                <p className="text-muted-foreground group-hover:text-primary-foreground/90 leading-relaxed text-sm">
+                <p className="text-muted-foreground/90 leading-relaxed text-sm">
                   Buyback, trade-in, certified second-life devices, and eco-friendly disposal
                 </p>
               </CardContent>
@@ -243,13 +243,13 @@ export default function HomePage() {
 
             <Card className="transition-all duration-300 border-border hover:shadow-lg hover:shadow-gray-200/50">
               <CardContent className="p-6 text-center">
-                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 group-hover:bg-primary-foreground/20">
-                  <Package className="h-6 w-6 text-primary group-hover:text-primary-foreground" />
+                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
+                  <Package className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="mb-2 text-xl font-semibold text-foreground group-hover:text-primary-foreground">
+                <h3 className="mb-2 text-xl font-semibold text-foreground">
                   Branding Materials
                 </h3>
-                <p className="text-muted-foreground group-hover:text-primary-foreground/90 leading-relaxed text-sm">
+                <p className="text-muted-foreground/90 leading-relaxed text-sm">
                   POS stickers, terminal skins, merchant display cards, and co-branded packaging
                 </p>
               </CardContent>
@@ -258,12 +258,12 @@ export default function HomePage() {
             <Card className="transition-all duration-300 border-border hover:shadow-lg hover:shadow-gray-200/50">
               <CardContent className="p-6 text-center">
                 <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg">
-                  <Globe className="h-6 w-6 text-secondary group-hover:text-primary-foreground" />
+                  <Globe className="h-6 w-6 text-secondary" />
                 </div>
-                <h3 className="mb-2 text-xl font-semibold text-foreground group-hover:text-primary-foreground">
+                <h3 className="mb-2 text-xl font-semibold text-foreground">
                   Fintech Incubation
                 </h3>
-                <p className="text-muted-foreground group-hover:text-primary-foreground/90 leading-relaxed text-sm">
+                <p className="text-muted-foreground/90 leading-relaxed text-sm">
                   Infrastructure, technical support, payment SDKs, and operational consultancy
                 </p>
               </CardContent>
@@ -286,12 +286,12 @@ export default function HomePage() {
             <Card className="transition-all duration-300 border-border hover:shadow-lg hover:shadow-gray-200/50">
               <CardContent className="p-6 text-center">
                 <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg">
-                  <Package className="h-6 w-6 text-primary group-hover:text-primary-foreground" />
+                  <Package className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="mb-2 text-xl font-semibold text-foreground group-hover:text-primary-foreground">
+                <h3 className="mb-2 text-xl font-semibold text-foreground">
                   One-Stop Fintech Ecosystem
                 </h3>
-                <p className="text-muted-foreground group-hover:text-primary-foreground/90 leading-relaxed">
+                <p className="text-muted-foreground/90 leading-relaxed">
                   Complete infrastructure from hardware to software, field service to merchant branding
                 </p>
               </CardContent>
@@ -300,12 +300,12 @@ export default function HomePage() {
             <Card className="transition-all duration-300 border-border hover:shadow-lg hover:shadow-gray-200/50">
               <CardContent className="p-6 text-center">
                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg">
-                  <Shield className="h-6 w-6 text-secondary group-hover:text-primary-foreground" />
+                  <Shield className="h-6 w-6 text-secondary" />
                 </div>
-                <h3 className="mb-2 text-xl font-semibold text-foreground group-hover:text-primary-foreground">
+                <h3 className="mb-2 text-xl font-semibold text-foreground">
                   Certified Integrations
                 </h3>
-                <p className="text-muted-foreground group-hover:text-primary-foreground/90 leading-relaxed">
+                <p className="text-muted-foreground/90 leading-relaxed">
                   Certified POS and software integrations with Visa, Mastercard, Meeza, and UnionPay
                 </p>
               </CardContent>
@@ -314,12 +314,12 @@ export default function HomePage() {
             <Card className="transition-all duration-300 border-border hover:shadow-lg hover:shadow-gray-200/50">
               <CardContent className="p-6 text-center">
                 <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg">
-                  <Globe className="h-6 w-6 text-accent group-hover:text-primary-foreground" />
+                  <Globe className="h-6 w-6 text-accent" />
                 </div>
-                <h3 className="mb-2 text-xl font-semibold text-foreground group-hover:text-primary-foreground">
+                <h3 className="mb-2 text-xl font-semibold text-foreground">
                   Nationwide Support
                 </h3>
-                <p className="text-muted-foreground group-hover:text-primary-foreground/90 leading-relaxed">
+                <p className="text-muted-foreground/90 leading-relaxed">
                   Field service and maintenance support across the country with real-time tracking
                 </p>
               </CardContent>
@@ -328,12 +328,12 @@ export default function HomePage() {
             <Card className="transition-all duration-300 border-border hover:shadow-lg hover:shadow-gray-200/50">
               <CardContent className="p-6 text-center">
                 <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg">
-                  <Wrench className="h-6 w-6 text-primary group-hover:text-primary-foreground" />
+                  <Wrench className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="mb-2 text-xl font-semibold text-foreground group-hover:text-primary-foreground">
+                <h3 className="mb-2 text-xl font-semibold text-foreground">
                   Complete Supply Chain
                 </h3>
-                <p className="text-muted-foreground group-hover:text-primary-foreground/90 leading-relaxed">
+                <p className="text-muted-foreground/90 leading-relaxed">
                   Hardware, software, consumables, and spare parts all from one trusted source
                 </p>
               </CardContent>
@@ -342,12 +342,12 @@ export default function HomePage() {
             <Card className="transition-all duration-300 border-border hover:shadow-lg hover:shadow-gray-200/50">
               <CardContent className="p-6 text-center">
                 <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg">
-                  <CheckCircle className="h-6 w-6 text-secondary group-hover:text-primary-foreground" />
+                  <CheckCircle className="h-6 w-6 text-secondary" />
                 </div>
-                <h3 className="mb-2 text-xl font-semibold text-foreground group-hover:text-primary-foreground">
+                <h3 className="mb-2 text-xl font-semibold text-foreground">
                   Merchant Branding Expertise
                 </h3>
-                <p className="text-muted-foreground group-hover:text-primary-foreground/90 leading-relaxed">
+                <p className="text-muted-foreground/90 leading-relaxed">
                   Custom branding materials to enhance visibility at every merchant touchpoint
                 </p>
               </CardContent>
@@ -356,12 +356,12 @@ export default function HomePage() {
             <Card className="transition-all duration-300 border-border hover:shadow-lg hover:shadow-gray-200/50">
               <CardContent className="p-6 text-center">
                 <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg">
-                  <Zap className="h-6 w-6 text-accent group-hover:text-primary-foreground" />
+                  <Zap className="h-6 w-6 text-accent" />
                 </div>
-                <h3 className="mb-2 text-xl font-semibold text-foreground group-hover:text-primary-foreground">
+                <h3 className="mb-2 text-xl font-semibold text-foreground">
                   Fintech Incubation
                 </h3>
-                <p className="text-muted-foreground group-hover:text-primary-foreground/90 leading-relaxed">
+                <p className="text-muted-foreground/90 leading-relaxed">
                   Empowering fintechs and banks to grow with operational and technical support
                 </p>
               </CardContent>
