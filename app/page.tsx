@@ -142,11 +142,11 @@ export default function HomePage() {
           </div>
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            <Card className="transition-all duration-300 border-border">
-            
-              <CardContent className="p-6 text-center">
-                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 group-hover:bg-primary-foreground/20">
-                  <Package className="h-6 w-6 text-primary group-hover:text-primary-foreground" />
+          
+           <Card className="transition-all duration-300 border-border hover:shadow-lg hover:shadow-gray-200/50">
+  <CardContent className="p-6 text-center">
+    <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
+      <Package className="h-6 w-6 text-primary group-hover:text-primary-foreground" />
                 </div>
                 <h3 className="mb-2 text-xl font-semibold text-foreground group-hover:text-primary-foreground">
                   POS Devices
@@ -154,8 +154,10 @@ export default function HomePage() {
                 <p className="text-muted-foreground group-hover:text-primary-foreground/90 leading-relaxed text-sm">
                   Android Smart POS, Traditional POS, Desktop & Countertop, Mini & Mobile terminals
                 </p>
-              </CardContent>
-            </Card>
+  </CardContent>
+</Card>
+
+            
              <Card className="group hover:shadow-lg transition-all duration-300 border-border">
             
               <CardContent className="p-6 text-center">
