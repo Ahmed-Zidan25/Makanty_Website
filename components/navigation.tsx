@@ -21,7 +21,7 @@ export function Navigation() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden items-left gap-8 md:flex">
+          {/* <div className="hidden items-center gap-12 md:flex">
             <Link href="/" className="text-sm font-medium text-foreground transition-colors hover:text-primary">
               Home
             </Link>
@@ -57,7 +57,68 @@ export function Navigation() {
             <Button asChild size="sm" className="ml-2">
               <Link href="/quote">Get Quote</Link>
             </Button>
-          </div>
+          </div> */}
+          <div className="flex-1 flex items-center justify-center gap-8">
+        <Link
+          href="/"
+          className="relative text-sm font-medium text-foreground transition-all duration-300 hover:text-primary group"
+        >
+          Home
+          <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+        </Link>
+        <Link
+          href="/about"
+          className="relative text-sm font-medium text-foreground transition-all duration-300 hover:text-primary group"
+        >
+          About Us
+          <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+        </Link>
+        <DropdownMenu>
+          <DropdownMenuTrigger className="relative flex items-center gap-1.5 text-sm font-medium text-foreground transition-all duration-300 hover:text-primary group">
+            Products
+            <ChevronDown className="h-4 w-4 transition-transform duration-300 group-hover:rotate-180" />
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align="center" className="w-48">
+            <DropdownMenuItem asChild>
+              <Link href="/products?category=pos">POS Devices</Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem asChild>
+              <Link href="/products?category=ecr">ECR Systems</Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem asChild>
+              <Link href="/products?category=pos-parts">POS Spare Parts</Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem asChild>
+              <Link href="/products?category=ecr-parts">ECR Spare Parts</Link>
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
+        <Link
+          href="/services"
+          className="relative text-sm font-medium text-foreground transition-all duration-300 hover:text-primary group"
+        >
+          Services
+          <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+        </Link>
+        <Link
+          href="/contact"
+          className="relative text-sm font-medium text-foreground transition-all duration-300 hover:text-primary group"
+        >
+          Contact
+          <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+        </Link>
+      </div>
+
+      <div className="flex-shrink-0">
+        <Button
+          asChild
+          size="sm"
+          className="bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300 hover:shadow-lg hover:scale-105"
+        >
+          <Link href="/quote">Get Quote</Link>
+        </Button>
+      </div>
 
           {/* Mobile Menu Button */}
           <button className="md:hidden" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} aria-label="Toggle menu">
