@@ -21,7 +21,7 @@ export function Navigation() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden items-center gap-6 md:flex">
+          <div className="hidden items-left gap-8 md:flex">
             <Link href="/" className="text-sm font-medium text-foreground transition-colors hover:text-primary">
               Home
             </Link>
