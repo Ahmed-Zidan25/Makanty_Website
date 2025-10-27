@@ -3,8 +3,6 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight, CheckCircle, Wrench, Package, Headphones, Shield, Zap, Globe } from "lucide-react"
 
-import { MarqueeBanner } from "@/components/MarqueeBanner" 
-import { ImageSlider } from "@/components/ImageSlider"
 
 
 export default function HomePage() {
@@ -62,8 +60,8 @@ export default function HomePage() {
             </div>
             <p className="text-sm text-muted-foreground">Trusted by the world's top POS manufacturers</p>
           </div>
-		  const marketingMessages = [
-  <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
+          {/* تم استبدال النص بالشعارات */}
+          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
             
             <div className="h-10 w-32 md:h-12 md:w-40 opacity-70 hover:opacity-100 transition-opacity">
               <img 
@@ -129,29 +127,6 @@ export default function HomePage() {
               />
           </div>
         </div>
- 
- ];
- const sliderImages = [
- { src: '/images/slider-promotion-1.jpg', alt: 'Promotion 1' },
- { src: '/images/slider-service-field.jpg', alt: 'Service Support' },
- ];
- 
- 
- 
- {/* Marquee Banner Added Here */}
- <MarqueeBanner items={marketingMessages} /> 
- {/* End Marquee Banner */}
- {/* Image Slider Section (Example placement before Ecosystem) */}
- <section className="pt-16 md:pt-24 bg-white">
- <div className="container mx-auto px-4">
- <ImageSlider images={sliderImages} />
- </div>
- 		  
-		  
-		  
-		  
-          {/* تم استبدال النص بالشعارات */}
-         
 
  </section>
 
