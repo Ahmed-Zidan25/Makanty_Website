@@ -3,18 +3,6 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight, CheckCircle, Wrench, Package, Headphones, Shield, Zap, Globe } from "lucide-react"
 
-// Import the MarqueeBanner component
-import { MarqueeBanner } from "@/components/MarqueeBanner" 
-
-// Define your messages for the banner
-const marketingMessages = [
-  '⭐ New POS Terminals: 20% Faster Processing!',
-  '🚚 Free, insured shipping on all orders over $500.',
-  '📞 24/7 technical support included with every Makanty device.',
-  '💡 Certified Integrations with Visa, Mastercard, and Meeza.',
-];
-
-
 export default function HomePage() {
   return (
     <div className="flex flex-col">
@@ -60,6 +48,9 @@ export default function HomePage() {
     </section>
 
       
+    
+      
+
       {/* Partners/Brands Section */}
       <section className="py-12 md:py-16">
          <div className="mb-10 text-center">
@@ -139,10 +130,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Marquee Banner Added Here */}
-      <MarqueeBanner items={marketingMessages} /> 
-      {/* End Marquee Banner */}
-
 
       {/* Ecosystem Section */}
       <section className="py-16 md:py-24">
@@ -156,7 +143,7 @@ export default function HomePage() {
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           
-       {/* <Card className="transition-all duration-300 border-border">
+       {/*     <Card className="transition-all duration-300 border-border">
   <CardContent className="p-6 text-center">
     <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg">
       <Package className="h-6 w-6 text-primary" />
