@@ -76,7 +76,7 @@ const logos = [
           </div>
           {/* تم استبدال النص بالشعارات */}
           <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
-            <LogoGrid logos={logos}/>
+            <LogoCarousel/>
             </div> 
             {/* <div className="h-10 w-32 md:h-12 md:w-40 opacity-70 hover:opacity-100 transition-opacity">
               <img 
