@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight, CheckCircle, Wrench, Package, Headphones, Shield, Zap, Globe } from "lucide-react"
 import LogoGrid from "@/components/LogoComponent";
+import LogoCarousel from "@/components/LogoCarousel";
+import LogoSwiper from "@/components/LogoComponent";
 
 
 
@@ -76,7 +78,7 @@ const logos = [
           </div>
           {/* تم استبدال النص بالشعارات */}
           <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
-            <LogoCarousel/>
+            <LogoSwiper logos={logos}/>
             </div> 
             {/* <div className="h-10 w-32 md:h-12 md:w-40 opacity-70 hover:opacity-100 transition-opacity">
               <img 
