@@ -2,8 +2,6 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight, CheckCircle, Wrench, Package, Headphones, Shield, Zap, Globe } from "lucide-react"
-import LogoGrid from "@/components/LogoComponent";
-import LogoCarousel from "@/components/LogoCarousel";
 import LogoSwiper from "@/components/LogoComponent";
 
 
