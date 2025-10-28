@@ -9,6 +9,7 @@ import LogoSwiper from "@/components/LogoSwipper";
 export default function HomePage() {
   
 const logos = [
+  { src: "/logos/pax.PNG", alt: "PAX Logo" },
   { src: "/logos/ncr.svg", alt: "NCR Corporation Logo" },
   { src: "/logos/ingenico.svg", alt: "Ingenico Logo" },
   { src: "/logos/verifone.PNG", alt: "Verifone Logo", customSize: "h-15 w-42" },
