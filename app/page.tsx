@@ -2,7 +2,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight, CheckCircle, Wrench, Package, Headphones, Shield, Zap, Globe } from "lucide-react"
-import LogoSwiper from "@/components/LogoComponent";
+import LogoSwiper from "@/components/LogoSwipper";
 
 
 
