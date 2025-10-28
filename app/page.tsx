@@ -77,6 +77,7 @@ const logos = [
           {/* تم استبدال النص بالشعارات */}
           <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
             <LogoGrid logos={logos}/>
+            </div> 
             {/* <div className="h-10 w-32 md:h-12 md:w-40 opacity-70 hover:opacity-100 transition-opacity">
               <img 
                 src="/logos/pax.PNG" 
@@ -139,8 +140,8 @@ const logos = [
                 alt="NEXGO" 
                 className="h-full w-full object-contain" 
               />
-          </div>
-          </div> */}
+          </div>*/}
+          
       </section>
 
 
