@@ -63,7 +63,7 @@ export default LogoSwiper;
 
 import { useEffect, useRef, useState } from "react";
 
-const LogoSwiper = ({ logos, speed = 0.5 }) => {
+const LogoSwiper = ({ logos, speed = 0.7 }) => {
   const trackRef = useRef<HTMLDivElement>(null);
   const [paused, setPaused] = useState(false);
 
