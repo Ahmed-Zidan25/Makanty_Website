@@ -2,11 +2,25 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight, CheckCircle, Wrench, Package, Headphones, Shield, Zap, Globe } from "lucide-react"
+import LogoGrid from "@/components/LogoComponent";
 
 
 
 export default function HomePage() {
+  
+const logos = [
+  { src: "/logos/ncr.svg", alt: "NCR Corporation Logo" },
+  { src: "/logos/ingenico.svg", alt: "Ingenico Logo" },
+  { src: "/logos/verifone.PNG", alt: "Verifone Logo", customSize: "h-15 w-42" },
+  { src: "/logos/sunmi.PNG", alt: "Sunmi" },
+  { src: "/logos/IMIN.svg", alt: "IMIN" },
+  { src: "/logos/Feitian.png", alt: "Feitian" },
+  { src: "/logos/NewPOS.png", alt: "NewPOS" },
+  { src: "/logos/NEXGO.svg", alt: "NEXGO" },
+];
+
   return (
+    //@ts-ignore
     <div className="flex flex-col">
       {/* Hero Section */}
       <section className="relative w-full overflow-hidden">
@@ -62,8 +76,8 @@ export default function HomePage() {
           </div>
           {/* تم استبدال النص بالشعارات */}
           <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
-            
-            <div className="h-10 w-32 md:h-12 md:w-40 opacity-70 hover:opacity-100 transition-opacity">
+            <LogoGrid logos={logos}/>
+            {/* <div className="h-10 w-32 md:h-12 md:w-40 opacity-70 hover:opacity-100 transition-opacity">
               <img 
                 src="/logos/pax.PNG" 
                 alt="PAX Technology Logo" 
@@ -126,9 +140,8 @@ export default function HomePage() {
                 className="h-full w-full object-contain" 
               />
           </div>
-        </div>
-
- </section>
+          </div> */}
+      </section>
 
 
 
