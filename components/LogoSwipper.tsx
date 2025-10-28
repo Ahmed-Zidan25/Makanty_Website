@@ -1,4 +1,6 @@
 
+"use client";
+
 import { useEffect, useRef } from "react";
 
 const LogoSwiper = ({ logos, speed = 40 }) => {
