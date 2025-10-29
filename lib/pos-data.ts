@@ -1,7 +1,7 @@
 export interface Product {
   id: string
   name: string
-  category: "pos" | "ecr" | "pos-parts" | "ecr-parts"
+  category: "Pax" | "Verifone" | "Sunmi" | "Newland" | "Newpos" | "Nexgo"
   brand: string
   description: string
   features: string[]
@@ -9,12 +9,13 @@ export interface Product {
   price?: string
 }
 
+
 export const products: Product[] = [
   // POS Devices - Android Smart POS
   {
     id: "pax-a920",
     name: "PAX A920",
-    category: "pos",
+    category: "Pax",
     brand: "PAX",
     description: "Advanced Android Smart POS terminal with large touchscreen and integrated printer",
     features: ['5.5" HD touchscreen', "Android OS", "Built-in printer", "4G/WiFi/Bluetooth", "NFC payment"],
@@ -24,7 +25,7 @@ export const products: Product[] = [
   {
     id: "sunmi-p2",
     name: "Sunmi P2",
-    category: "pos",
+    category: "Sunmi",
     brand: "SUNMI",
     description: "Portable Android Smart POS with powerful performance and elegant design",
     features: ['5.99" display', "Quad-core processor", "58mm printer", "Dual cameras", "Long battery life"],
@@ -34,7 +35,7 @@ export const products: Product[] = [
   {
     id: "nexgo-n5",
     name: "NEXGO N5",
-    category: "pos",
+    category: "Nexgo",
     brand: "NEXGO",
     description: "Compact Android Smart POS for mobile payment acceptance",
     features: ["Android 9.0", "4G connectivity", "5-inch touchscreen", "Thermal printer", "Multi-payment support"],
@@ -56,7 +57,7 @@ export const products: Product[] = [
   {
     id: "verifone-v400m",
     name: "Verifone V400m",
-    category: "pos",
+    category: "Nexgo",
     brand: "Verifone",
     description: "Versatile countertop payment terminal with advanced security",
     features: ['7" touchscreen', "EMV certified", "Contactless payments", "Secure encryption", "Cloud-ready"],
@@ -66,7 +67,7 @@ export const products: Product[] = [
   {
     id: "newpos-np500",
     name: "NewPOS NP500",
-    category: "pos",
+    category: "Nexgo",
     brand: "NewPOS",
     description: "Reliable desktop POS terminal for retail and hospitality",
     features: ["Compact design", "Fast processor", "Multiple connectivity", "Easy integration", "Durable build"],
@@ -78,7 +79,7 @@ export const products: Product[] = [
   {
     id: "pax-a80",
     name: "PAX A80",
-    category: "pos",
+    category: "Nexgo",
     brand: "PAX",
     description: "Compact mobile POS for on-the-go payment acceptance",
     features: ["Lightweight design", "Long battery life", "4G connectivity", "Contactless ready", "Portable"],
@@ -88,7 +89,7 @@ export const products: Product[] = [
   {
     id: "feitian-c10",
     name: "Feitian C10",
-    category: "pos",
+    category: "Nexgo",
     brand: "Feitian",
     description: "Mini POS terminal with secure payment processing",
     features: ["Compact size", "EMV certified", "Bluetooth/WiFi", "Long standby time", "Easy to use"],
@@ -100,7 +101,7 @@ export const products: Product[] = [
   {
     id: "ecr-basic-100",
     name: "ECR Basic 100",
-    category: "ecr",
+    category: "Nexgo",
     brand: "Makanty",
     description: "Entry-level electronic cash register for small businesses",
     features: ["Easy operation", "Thermal printer", "Cash drawer", "Basic reporting", "Affordable"],
@@ -110,7 +111,7 @@ export const products: Product[] = [
   {
     id: "ecr-pro-500",
     name: "ECR Pro 500",
-    category: "ecr",
+    category: "Nexgo",
     brand: "Makanty",
     description: "Professional ECR with advanced features and reporting",
     features: ["LCD display", "Multiple departments", "Inventory tracking", "Sales reports", "USB connectivity"],
@@ -162,7 +163,7 @@ export const products: Product[] = [
   {
     id: "pos-power-adapter",
     name: "POS Power Adapter",
-    category: "pos-parts",
+    category: "Nexgo",
     brand: "Universal",
     description: "Universal power adapter for POS terminals",
     features: ["Multiple voltages", "Surge protection", "Compact design", "Long cable", "Safety certified"],
@@ -172,7 +173,7 @@ export const products: Product[] = [
   {
     id: "charging-dock",
     name: "Charging Dock",
-    category: "pos-parts",
+    category: "Nexgo",
     brand: "Universal",
     description: "Multi-device charging dock for POS terminals",
     features: [
@@ -200,7 +201,7 @@ export const products: Product[] = [
   {
     id: "ecr-paper-roll",
     name: "Thermal Paper Rolls",
-    category: "ecr-parts",
+    category: "Nexgo",
     brand: "Universal",
     description: "High-quality thermal paper rolls for ECR and POS systems",
     features: ["BPA-free", "Long-lasting print", "Various sizes", "Bulk available", "Eco-friendly"],
@@ -210,7 +211,7 @@ export const products: Product[] = [
   {
     id: "cash-drawer-insert",
     name: "Cash Drawer Insert",
-    category: "ecr-parts",
+    category: "Nexgo",
     brand: "Universal",
     description: "Replacement cash drawer insert tray",
     features: ["Durable plastic", "Multiple compartments", "Standard size", "Easy to clean", "Secure fit"],
@@ -220,7 +221,7 @@ export const products: Product[] = [
   {
     id: "ecr-keyboard",
     name: "ECR Keyboard",
-    category: "ecr-parts",
+    category: "Nexgo",
     brand: "Universal",
     description: "Replacement keyboard for electronic cash registers",
     features: ["Tactile keys", "Spill resistant", "Easy installation", "Long lifespan", "Compatible models"],
@@ -230,7 +231,7 @@ export const products: Product[] = [
   {
     id: "sim-cards",
     name: "SIM Cards & Data Packs",
-    category: "ecr-parts",
+    category: "Nexgo",
     brand: "Makanty",
     description: "SIM cards with data packages for POS connectivity",
     features: [
@@ -246,7 +247,7 @@ export const products: Product[] = [
   {
     id: "security-seals",
     name: "Security Seals & Stickers",
-    category: "ecr-parts",
+    category: "Nexgo",
     brand: "Makanty",
     description: "Tamper-evident security seals for POS devices",
     features: ["Tamper-evident", "Strong adhesive", "Custom printing", "Various sizes", "Bulk orders"],
@@ -255,14 +256,13 @@ export const products: Product[] = [
   },
 ]
 
+
 export const categories = [
   { id: "all", name: "All Products", count: products.length },
-  { id: "pos", name: "POS Devices", count: products.filter((p) => p.category === "pos").length },
-  { id: "ecr", name: "ECR Systems", count: products.filter((p) => p.category === "ecr").length },
-  {
-    id: "pos-parts",
-    name: "Accessories & Spare Parts",
-    count: products.filter((p) => p.category === "pos-parts").length,
-  },
-  { id: "ecr-parts", name: "Consumables", count: products.filter((p) => p.category === "ecr-parts").length },
+  { id: "Pax", name: "Pax", count: products.filter((p) => p.category === "Pax").length },
+  { id: "Verifone", name: "Verifone", count: products.filter((p) => p.category === "Verifone").length },
+  { id: "Sunmi", name: "Sunmi", count: products.filter((p) => p.category === "Sunmi").length },
+  { id: "Newland", name: "Newland", count: products.filter((p) => p.category === "Newland").length },
+  { id: "Newpos", name: "Newpos", count: products.filter((p) => p.category === "Newpos").length },
+  { id: "Nexgo", name: "Nexgo", count: products.filter((p) => p.category === "Nexgo").length },
 ]
