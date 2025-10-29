@@ -11,7 +11,7 @@ export function Footer() {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <Image src="/makanty-logo.png" alt="Makanty Logo" width={40} height={40} className="h-10 w-10" />
-              <span className="text-xl font-bold text-foreground">Makanty</span>
+              <span className="text-xl font-bold text-foreground">Mk360</span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Your trusted partner for POS devices, ECR systems, and comprehensive maintenance solutions.
@@ -94,7 +94,7 @@ export function Footer() {
                   href="mailto:info@makanty.com"
                   className="text-sm text-muted-foreground transition-colors hover:text-primary"
                 >
-                  info@makanty.com
+                  info@mk360.co
                 </a>
               </li>
               <li className="flex items-start gap-2">
@@ -105,12 +105,12 @@ export function Footer() {
                   rel="noopener noreferrer"
                   className="text-sm text-muted-foreground transition-colors hover:text-primary"
                 >
-                 +2 01069443438
+                 +2 01066555757
                 </a>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="h-5 w-5 text-primary flex-shrink-0" />
-                <span className="text-sm text-muted-foreground">Al Bahr Al-Raisi Street, Sheraton, El-Nozha, Cairo, Egypt</span>
+                <span className="text-sm text-muted-foreground">6 Al Mokhtar Street, New Maadi, Cairo, Egypt</span>
               </li>
             </ul>
           </div>
@@ -118,7 +118,7 @@ export function Footer() {
 
         <div className="mt-12 border-t border-border pt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} Makanty. All rights reserved.
+            &copy; {new Date().getFullYear()} MK360. All rights reserved.
           </p>
         </div>
       </div>

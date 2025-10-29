@@ -157,8 +157,8 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <h3 className="mb-1 font-semibold text-foreground">Email</h3>
-                        <p className="text-sm text-muted-foreground">info@makanty.com</p>
-                        <p className="text-sm text-muted-foreground">support@makanty.com</p>
+                        <p className="text-sm text-muted-foreground">info@mk360.co</p>
+                        <p className="text-sm text-muted-foreground">support@mk360.co</p>
                       </div>
                     </div>
 
@@ -168,7 +168,7 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <h3 className="mb-1 font-semibold text-foreground">Phone</h3>
-                        <p className="text-sm text-muted-foreground">+2 01069443438</p>
+                        <p className="text-sm text-muted-foreground">+2 010665557575</p>
                       </div>
                     </div>
 
@@ -178,8 +178,8 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <h3 className="mb-1 font-semibold text-foreground">Address</h3>
-                        <p className="text-sm text-muted-foreground">Al Bahr Al-Raisi Street</p>
-                        <p className="text-sm text-muted-foreground">Sheraton, El-Nozha, Cairo</p>
+                        <p className="text-sm text-muted-foreground">6 Al Mokhtar Street, New Maadi</p>
+                        <p className="text-sm text-muted-foreground">Cairo</p>
                         <p className="text-sm text-muted-foreground">Egypt</p>
                       </div>
                     </div>
@@ -361,7 +361,7 @@ export default function ContactPage() {
               <CardContent>
                 <div className="aspect-[21/9] rounded-xl overflow-hidden shadow-xl">
                   <iframe
-                    src="https://maps.google.com/maps?q=100%20Merghany%20st.,%20Masr%20El%20Gedida,%20Cairo,%20Egypt&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    src="https://maps.google.com/maps?q=6%20Al%20Mokhtar%20Street,%20New%20Maadi,%20Cairo,%20Egypt&t=&z=15&ie=UTF8&iwloc=&output=embed"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
@@ -374,7 +374,7 @@ export default function ContactPage() {
 
                 <p className="text-sm text-muted-foreground mt-4 flex items-center justify-center sm:justify-start">
                   <MapPin className="h-4 w-4 text-secondary mr-2" />
-                  100 Merghany st., Masr El Gedida, Cairo, Egypt
+                  6 Al Mokhtar Street, New Maadi, Cairo, Egypt
                 </p>
               </CardContent>
             </Card>
