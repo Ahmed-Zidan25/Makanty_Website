@@ -1,7 +1,6 @@
 "use client"
 
 import type React from "react"
-
 import { useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -26,22 +25,38 @@ export default function QuotePage() {
     additionalInfo: "",
   })
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    console.log("[v0] Quote form submitted:", formData)
-    alert("Thank you for your quote request! Our team will contact you within 24 hours.")
-    setFormData({
-      companyName: "",
-      contactName: "",
-      email: "",
-      phone: "",
-      businessType: "",
-      productCategory: "",
-      quantity: "",
-      specificProducts: "",
-      services: [],
-      additionalInfo: "",
-    })
+    console.log("Quote form submitted:", formData)
+
+    try {
+      const res = await fetch("/api/send-quote", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      })
+
+      if (res.ok) {
+        alert("Thank you for your quote request! Our team will contact you within 24 hours.")
+        setFormData({
+          companyName: "",
+          contactName: "",
+          email: "",
+          phone: "",
+          businessType: "",
+          productCategory: "",
+          quantity: "",
+          specificProducts: "",
+          services: [],
+          additionalInfo: "",
+        })
+      } else {
+        alert("Something went wrong while sending your request. Please try again later.")
+      }
+    } catch (error) {
+      console.error("Error submitting quote:", error)
+      alert("Network error. Please check your connection and try again.")
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
