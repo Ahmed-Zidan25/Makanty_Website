@@ -39,7 +39,40 @@ export function Navigation() {
               About Us
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
             </Link>
-            <DropdownMenu>
+           <Link
+              href="/pos"
+              className="relative text-sm font-medium text-foreground transition-all duration-300 hover:text-primary group"
+            >
+              POS Devices
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+            </Link>
+           
+                     {/*  <Link
+              href="/pos"
+              className="relative text-sm font-medium text-foreground transition-all duration-300 hover:text-primary group"
+            >
+              POS Devices
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+            </Link>
+
+                       <Link
+              href="/pos"
+              className="relative text-sm font-medium text-foreground transition-all duration-300 hover:text-primary group"
+            >
+              POS Devices
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+            </Link>
+
+                       <Link
+              href="/pos"
+              className="relative text-sm font-medium text-foreground transition-all duration-300 hover:text-primary group"
+            >
+              POS Devices
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+            </Link> */}
+
+            
+           {/*  <DropdownMenu>
               <DropdownMenuTrigger className="relative flex items-center gap-1.5 text-sm font-medium text-foreground transition-all duration-300 hover:text-primary group">
                 Products
                 <ChevronDown className="h-4 w-4 transition-transform duration-300 group-hover:rotate-180" />
@@ -59,7 +92,7 @@ export function Navigation() {
                   <Link href="/products?category=ecr-parts">ECR Spare Parts</Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
-            </DropdownMenu>
+            </DropdownMenu> */}
             <Link
               href="/services"
               className="relative text-sm font-medium text-foreground transition-all duration-300 hover:text-primary group"
