@@ -31,10 +31,11 @@ export default function QuotePage() {
 
     try {
       const res = await fetch("/api/send-quote", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      })
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify(formData),
+})
+
 
       if (res.ok) {
         alert("Thank you for your quote request! Our team will contact you within 24 hours.")
