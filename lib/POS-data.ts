@@ -1,14 +1,13 @@
 export interface Product {
   id: string
   name: string
-  category: "Pax" | "Verifone" | "Sunmi" | "Newland" | "New pos" | "Nexgo"
+  category: "pos" | "ecr" | "pos-parts" | "ecr-parts"
   brand: string
   description: string
   features: string[]
   image: string
   price?: string
 }
-
 
 export const products: Product[] = [
   // POS Devices - Android Smart POS
@@ -256,17 +255,14 @@ export const products: Product[] = [
   },
 ]
 
-
-
-
-
-
 export const categories = [
   { id: "all", name: "All Products", count: products.length },
-  { id: "Pax", name: "Pax", count: products.filter((p) => p.category === "Pax").length },
-  { id: "Verifone", name: "Verifone", count: products.filter((p) => p.category === "Verifone").length }, 
-  { id: "Sunmi", name: "Sunmi", count: products.filter((p) => p.category === "Sunmi").length },
-  { id: "Newland", name: "Newland", count: products.filter((p) => p.category === "Newland").length },
-  { id: "New pos", name: "New pos", count: products.filter((p) => p.category === "New pos").length },
-  { id: "Nexgo", name: "Nexgo", count: products.filter((p) => p.category === "Nexgo").length },
-  ]
+  { id: "pos", name: "POS Devices", count: products.filter((p) => p.category === "pos").length },
+  { id: "ecr", name: "ECR Systems", count: products.filter((p) => p.category === "ecr").length },
+  {
+    id: "pos-parts",
+    name: "Accessories & Spare Parts",
+    count: products.filter((p) => p.category === "pos-parts").length,
+  },
+  { id: "ecr-parts", name: "Consumables", count: products.filter((p) => p.category === "ecr-parts").length },
+]
