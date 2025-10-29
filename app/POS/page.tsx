@@ -5,7 +5,7 @@ import { useSearchParams } from "next/navigation"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { products, categories } from "@/lib/POS-data"
+import { products, categories } from "@/lib/pos-data"
 import { CheckCircle } from "lucide-react"
 import Link from "next/link"
 
