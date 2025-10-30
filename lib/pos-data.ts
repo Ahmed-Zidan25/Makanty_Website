@@ -107,7 +107,7 @@ export const products: Product[] = [
  {
     id: "pax-a35",
     name: "PAX A35",
-    category: "PAX",
+    category: "Pax",
     brand: "PAX",
     description: "The ideal payment solution for multilane retailers",
     features: ["Android 10", "4-inch capacitive touch screen", "LAN + WiFi (2.4Ghz/5Ghz) + Bluetooth 4.2", "contactless", "Magnetic stripe", "0.3MP or 5MP front camera"],
