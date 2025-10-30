@@ -25,7 +25,7 @@ export const products: Product[] = [
   {
     id: "pax-A920 MAX",
     name: "PAX A920 MAX",
-    category: "PAX",
+    category: "Pax",
     brand: "PAX",
     description: "The MAX is designed to keep you connected in every way possible. A920 MAX delivers a 40% faster install speed and 216% faster reading speed when compared to the A920",
     features: ["6.5' (5G version) capacitive touchscreen", "5G or 4G + WiFi + Bluetooth", "Android 10, 11 or Android 13", "Cortex A53, 1.3 GHz secure processor"],
@@ -35,7 +35,7 @@ export const products: Product[] = [
   {
     id: "pax-A920 PRO",
     name: "PAX A920 PRO",
-    category: "PAX",
+    category: "Pax",
     brand: "PAX",
     description: "Compact in form, powerful in performance. The iconic elegance you know.",
     features: ["Android 14", "Dual-core Cortex A75 processor + Six-Core Cortex A55", "6.56' capacitive touchscreen", "eSIM (NFC Tag)", "5MP front + 8MP rear camera"],
@@ -45,7 +45,7 @@ export const products: Product[] = [
   {
     id: "pax-A910S",
     name: "PAX A910S",
-    category: "PAX",
+    category: "Pax",
     brand: "PAX",
     description: "Classic with cutting-edge power",
     features: ["Android 10 / 12", "Cortex Quad-core A53/A55 processor", "5' / 5.5' HD touch screen", "4G + WiFi + Bluetooth"],
@@ -56,7 +56,7 @@ export const products: Product[] = [
   {
     id: "pax-A8900",
     name: "PAX A8900",
-    category: "PAX",
+    category: "Pax",
     brand: "PAX",
     description: "Advanced Smart Mobile or Desktop with full touch screen or physical keypad.",
     features: ["Paydroid, powered by Android 12 GO", "Cortex A53 Quad-Core, 2.0GHz", "Chip & PIN | NFC Contactless | Magnetic Stripe", "5.5' 720x1440 Pixels Capacitive Full Touch Scree"],
@@ -66,7 +66,7 @@ export const products: Product[] = [
   {
     id: "pax-A8700",
     name: "PAX A8700",
-    category: "PAX",
+    category: "Pax",
     brand: "PAX",
     description: "The ultimate merchant & customer facing device. Running one single processor.",
     features: ["Android 11", "Quad Core 2.0 GHz processor", "7' + 4' capacitive touchscreens", "LAN + WiFi 5.0 + Bluetooth 5.0 and optional 4G", "Contactless + Chip & PIN + 2 Magstripes"],
@@ -76,7 +76,7 @@ export const products: Product[] = [
   {
     id: "pax-A50 Android MiniPOS",
     name: "PAX A50",
-    category: "PAX",
+    category: "Pax",
     brand: "PAX",
     description: "All the technology you need in a portable device.",
     features: ["Compact design", "Android 10", "4-inch IPS colour display", "4G + WiFi + Bluetooth", "Durable build"],
@@ -87,7 +87,7 @@ export const products: Product[] = [
   {
     id: "pax-a80",
     name: "PAX A80",
-    category: "PAX",
+    category: "Pax",
     brand: "PAX",
     description: "The perfect countertop solution for small & mid-sized businesses",
     features: ["Android 6.0, 7.1 or 10.0", "Cortex A53 processor", "4G connectivity", "4-inch HD touch screen", "Physical keypad"],
@@ -97,7 +97,7 @@ export const products: Product[] = [
   {
     id: "pax-a77",
     name: "PAX A77",
-    category: "PAX",
+    category: "Pax",
     brand: "PAX",
     description: "The A77 can be carried with you at all times. Weighing as little as 270g and only 17mm thick.",
     features: ["Android 14", "5.5-inch color touchscreen", "4G + WiFi 5Ghz + Bluetooth 5.0", "USB type-C charging port", "Easy to use"],
