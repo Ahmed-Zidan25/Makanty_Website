@@ -10,7 +10,7 @@ export default function AboutPage() {
       <section className="border-b border-border bg-gradient-to-br from-primary/5 to-secondary/5 py-12 md:py-16">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-3xl text-center">
-            <h1 className="mb-4 text-4xl font-bold text-foreground md:text-5xl">About Makanty</h1>
+            <h1 className="mb-4 text-4xl font-bold text-foreground md:text-5xl">About MK360</h1>
             <p className="text-lg text-muted-foreground leading-relaxed text-justify">
               A comprehensive fintech enabler and POS infrastructure provider — bridging hardware, software, and
               services to power every payment
@@ -38,7 +38,7 @@ export default function AboutPage() {
                       <div className="flex-1">
                         <h3 className="mb-2 text-lg font-semibold text-foreground">Comprehensive Fintech Enabler</h3>
                         <p className="text-muted-foreground leading-relaxed text-justify text-sm">
-                          Makanty is a comprehensive fintech enabler and POS infrastructure provider — bridging
+                          MK360 is a comprehensive fintech enabler and POS infrastructure provider — bridging
                           hardware, software, and services to power every payment. We supply, support, and sustain the
                           full fintech journey — from POS terminals to field operations, from maintenance to merchant
                           branding.
@@ -383,7 +383,7 @@ export default function AboutPage() {
             <CardContent className="p-8 text-center md:p-12">
               <h2 className="mb-4 text-3xl font-bold text-foreground md:text-4xl">Ready to Work Together?</h2>
               <p className="mx-auto mb-8 max-w-2xl text-muted-foreground leading-relaxed">
-                Join hundreds of satisfied businesses that trust Makanty for their POS solutions. Let's discuss how we
+                Join hundreds of satisfied businesses that trust MK360 for their POS solutions. Let's discuss how we
                 can help your business grow
               </p>
               <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">

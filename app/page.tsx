@@ -38,7 +38,7 @@ const logos = [
       <div className="container relative mx-auto px-4 py-10 md:py-16 z-10">
         <div className="mx-auto max-w-3xl text-center">
           <h1 className="mb-6 text-4xl font-bold leading-tight text-balance md:text-5xl lg:text-6xl text-white">
-            Makanty – Empowering Every Transaction
+            MK360 – Empowering Every Transaction
           </h1>
           <p className="mb-8 text-lg text-white/90 leading-relaxed md:text-xl">
             A comprehensive fintech enabler and POS infrastructure provider — bridging hardware, software, and services
@@ -151,7 +151,7 @@ const logos = [
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="mb-12 text-center">
-            <h2 className="mb-4 text-3xl font-bold text-foreground md:text-4xl">The Makanty Ecosystem</h2>
+            <h2 className="mb-4 text-3xl font-bold text-foreground md:text-4xl">The MK360 Ecosystem</h2>
             <p className="mx-auto max-w-2xl text-muted-foreground leading-relaxed">
               All you need to build, run, and scale your fintech operations
             </p>
@@ -280,7 +280,7 @@ const logos = [
       <section className="bg-muted/30 py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="mb-12 text-center">
-            <h2 className="mb-4 text-3xl font-bold text-foreground md:text-4xl">Why Choose Makanty?</h2>
+            <h2 className="mb-4 text-3xl font-bold text-foreground md:text-4xl">Why Choose MK360?</h2>
             <p className="mx-auto max-w-2xl text-muted-foreground leading-relaxed">
               We don't just power payments — we empower the ecosystem
             </p>
