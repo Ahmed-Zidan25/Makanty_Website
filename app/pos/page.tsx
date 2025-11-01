@@ -93,7 +93,7 @@ function ProductsContent() {
                         <Link href="/quote">Request Quote</Link>
                       </Button>
                     </div>
-                  </div>
+                  </ div>
                 </CardContent>
               </Card>
             ))}
