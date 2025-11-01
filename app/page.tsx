@@ -79,69 +79,7 @@ const logos = [
           <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
             <LogoSwiper logos={logos}/>
             </div> 
-            {/* <div className="h-10 w-32 md:h-12 md:w-40 opacity-70 hover:opacity-100 transition-opacity">
-              <img 
-                src="/logos/pax.PNG" 
-                alt="PAX Technology Logo" 
-                className="h-full w-full object-contain" 
-              />
-            </div>
-            <div className="h-10 w-32 md:h-12 md:w-40 opacity-70 hover:opacity-100 transition-opacity">
-              <img 
-                src="/logos/ncr.svg" 
-                alt="NCR Corporation Logo" 
-                className="h-full w-full object-contain" 
-              />
-            </div>
-            <div className="h-10 w-32 md:h-12 md:w-40 opacity-70 hover:opacity-100 transition-opacity">
-              <img 
-                src="/logos/ingenico.svg" 
-                alt="Ingenico Logo" 
-                className="h-full w-full object-contain" 
-              />
-            </div>
-            <div className="h-15 w-42 md:h-12 md:w-40 opacity-70 hover:opacity-100 transition-opacity">
-              <img 
-                src="/logos/verifone.PNG" 
-                alt="verifone Logo" 
-                className="h-full w-full object-contain" 
-              />
-            </div>
-            <div className="h-10 w-32 md:h-12 md:w-40 opacity-70 hover:opacity-100 transition-opacity">
-              <img 
-                src="/logos/sunmi.PNG" 
-                alt="sunmi" 
-                className="h-full w-full object-contain" 
-              />
-            </div>
-            <div className="h-10 w-32 md:h-12 md:w-40 opacity-70 hover:opacity-100 transition-opacity">
-              <img 
-                src="/logos/IMIN.svg" 
-                alt="IMIN" 
-                className="h-full w-full object-contain" 
-              />
-            </div>
-            <div className="h-10 w-32 md:h-12 md:w-40 opacity-70 hover:opacity-100 transition-opacity">
-              <img 
-                src="/logos/Feitian.png" 
-                alt="Feitian" 
-                className="h-full w-full object-contain" 
-              />
-            </div>
-            <div className="h-10 w-32 md:h-12 md:w-40 opacity-70 hover:opacity-100 transition-opacity">
-              <img 
-                src="/logos/NewPOS.png" 
-                alt="NewPOS" 
-                className="h-full w-full object-contain" 
-              />
-            </div>
-            <div className="h-10 w-32 md:h-12 md:w-40 opacity-70 hover:opacity-100 transition-opacity">
-              <img 
-                src="/logos/NEXGO.svg" 
-                alt="NEXGO" 
-                className="h-full w-full object-contain" 
-              />
-          </div>*/}
+            
           
       </section>
 

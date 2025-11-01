@@ -27,7 +27,7 @@ export function Footer() {
                   About Us
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/products" className="text-sm text-muted-foreground transition-colors hover:text-primary">
                   Products
                 </Link>
@@ -36,7 +36,7 @@ export function Footer() {
                 <Link href="/services" className="text-sm text-muted-foreground transition-colors hover:text-primary">
                   Services
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="/contact" className="text-sm text-muted-foreground transition-colors hover:text-primary">
                   Contact
@@ -51,7 +51,7 @@ export function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/products?category=pos"
+                  href="/pos"
                   className="text-sm text-muted-foreground transition-colors hover:text-primary"
                 >
                   POS Devices
@@ -59,7 +59,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/products?category=ecr"
+                  href="/ecr"
                   className="text-sm text-muted-foreground transition-colors hover:text-primary"
                 >
                   ECR Systems
@@ -67,18 +67,18 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/products?category=pos-parts"
+                  href="/consumables"
                   className="text-sm text-muted-foreground transition-colors hover:text-primary"
                 >
-                  POS Spare Parts
+                  Consumables
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/products?category=ecr-parts"
+                  href="/services"
                   className="text-sm text-muted-foreground transition-colors hover:text-primary"
                 >
-                  ECR Spare Parts
+                  Services
                 </Link>
               </li>
             </ul>
