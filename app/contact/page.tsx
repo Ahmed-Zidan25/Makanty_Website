@@ -361,10 +361,7 @@ export default function ContactPage() {
               <CardContent>
                 <div className="aspect-[21/9] rounded-xl overflow-hidden shadow-xl">
                   <iframe
-                    /* 
-                    https://maps.google.com/maps?q=LAT,LON&z=ZOOM&output=embed
-                    src="https://maps.google.com/maps?q=6%20Al%20Mokhtar%20Street,%20New%20Maadi,%20Cairo,%20Egypt&t=&z=15&ie=UTF8&iwloc=&output=embed" */
-                    src="https://maps.google.com/maps?q=29.9750180,31.2753333&z=100&output=embed"
+                    src="https://maps.google.com/maps?q=29.9750180,31.2753333&z=15&output=embed"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
