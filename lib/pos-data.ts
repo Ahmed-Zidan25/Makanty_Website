@@ -497,7 +497,36 @@ export const products: Product[] = [
     image: "/N80.png",
     price: "Contact for pricing",
   },
-
+ {
+    id: "N82",
+    name: "N82",
+    category: "Nexgo",
+    brand: "Nexgo",
+    description: "Smart POS Terminal Slim, Portable and Fashionable",
+    features: ["Dual-band Wi-Fi and Dual SIM", "contactless/NFC", "1D&2D codes", "Full Connection", "Outstanding Performance"],
+    image: "/N82.png",
+    price: "Contact for pricing",
+  },
+   {
+    id: "N86",
+    name: "N86",
+    category: "Nexgo",
+    brand: "Nexgo",
+    description: "Combines the arts and advanced protection technology which makes N86 the most beautiful and durable smart POS terminal than ever",
+    features: ["600+ receipt printings", "High-Pressure Printing", "ATEX Certified", "Magnetic Stripe Cards", "IC cards, contactless/NFC, 1D & 2D barcodes"],
+    image: "/N86.png",
+    price: "Contact for pricing",
+  },
+   {
+    id: "P200",
+    name: "P200",
+    category: "Nexgo",
+    brand: "Nexgo",
+    description: "6.0 Inches & Android 9.X Powered",
+    features: ["Low Power Consumption", "Low Noise", "Outstanding Performance", "Contactless/NFC", "1D & 2D Codes"],
+    image: "/P200.png",
+    price: "Contact for pricing",
+  },
 ]
 
 
