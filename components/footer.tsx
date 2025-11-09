@@ -14,9 +14,9 @@ export function Footer() {
               <span className="text-xl font-bold text-foreground">Mk360</span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Your trusted partner for POS devices, ECR systems, and comprehensive maintenance solutions.
-            </p>
-          </div>
+             <b>One-Stop Fintech Ecosystem.</b> Complete infrastructure from hardware to software, field service to merchant branding.
+             </p>
+             </div>
 
           {/* Quick Links */}
           <div className="space-y-4">
