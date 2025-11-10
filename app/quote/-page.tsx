@@ -25,28 +25,20 @@ export default function QuotePage() {
     additionalInfo: "",
   })
 
-  const [isLoading, setIsLoading] = useState(false)
-  const [message, setMessage] = useState<{ type: "success" | "error"; text: string } | null>(null)
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    setIsLoading(true)
-    setMessage(null)
+    console.log("Quote form submitted:", formData)
 
     try {
       const res = await fetch("/api/send-quote", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      })
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify(formData),
+})
 
-      const data = await res.json()
 
       if (res.ok) {
-        setMessage({
-          type: "success",
-          text: "Thank you for your quote request! Our team will contact you within 24 hours.",
-        })
+        alert("Thank you for your quote request! Our team will contact you within 24 hours.")
         setFormData({
           companyName: "",
           contactName: "",
@@ -60,37 +52,28 @@ export default function QuotePage() {
           additionalInfo: "",
         })
       } else {
-        setMessage({
-          type: "error",
-          text: data.message || "Something went wrong. Please try again later.",
-        })
+        alert("Something went wrong while sending your request. Please try again later.")
       }
     } catch (error) {
       console.error("Error submitting quote:", error)
-      setMessage({
-        type: "error",
-        text: "Network error. Please check your connection and try again.",
-      })
-    } finally {
-      setIsLoading(false)
+      alert("Network error. Please check your connection and try again.")
     }
   }
 
-  // Declare handleChange function
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    const { name, value } = e.target
-    setFormData((prev) => ({ ...prev, [name]: value }))
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }))
   }
 
-  // Declare handleServiceToggle function
   const handleServiceToggle = (service: string) => {
-    setFormData((prev) => {
-      if (prev.services.includes(service)) {
-        return { ...prev, services: prev.services.filter((s) => s !== service) }
-      } else {
-        return { ...prev, services: [...prev.services, service] }
-      }
-    })
+    setFormData((prev) => ({
+      ...prev,
+      services: prev.services.includes(service)
+        ? prev.services.filter((s) => s !== service)
+        : [...prev.services, service],
+    }))
   }
 
   const services = [
@@ -164,18 +147,6 @@ export default function QuotePage() {
               <div className="lg:col-span-2">
                 <Card className="border-border">
                   <CardContent className="p-6 md:p-8">
-                    {message && (
-                      <div
-                        className={`mb-6 rounded-lg p-4 ${
-                          message.type === "success"
-                            ? "bg-green-50 text-green-800 border border-green-200"
-                            : "bg-red-50 text-red-800 border border-red-200"
-                        }`}
-                      >
-                        {message.text}
-                      </div>
-                    )}
-
                     <form onSubmit={handleSubmit} className="space-y-6">
                       {/* Company Information */}
                       <div>
@@ -342,8 +313,8 @@ export default function QuotePage() {
                         </div>
                       </div>
 
-                      <Button type="submit" size="lg" className="w-full" disabled={isLoading}>
-                        {isLoading ? "Sending..." : "Submit Quote Request"}
+                      <Button type="submit" size="lg" className="w-full">
+                        Submit Quote Request
                       </Button>
 
                       <p className="text-center text-sm text-muted-foreground">
